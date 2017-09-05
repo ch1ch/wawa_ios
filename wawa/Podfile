@@ -1,0 +1,6 @@
+target:'wawa'do
+pod 'WebViewJavascriptBridge', '~> 5.0'
+pod 'Reachability'
+pod 'AFNetworking'
+pod 'Toast'
+end

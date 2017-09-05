@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		154703AC742799E1286E9978 /* libPods-wawa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F5B37EAF63675639584096 /* libPods-wawa.a */; };
 		6F3A6F3C1F5F17A000A805FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A6F3B1F5F17A000A805FB /* main.m */; };
 		6F3A6F3F1F5F17A000A805FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A6F3E1F5F17A000A805FB /* AppDelegate.m */; };
 		6F3A6F421F5F17A000A805FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A6F411F5F17A000A805FB /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		6F3A6F471F5F17A000A805FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6F461F5F17A000A805FB /* Assets.xcassets */; };
 		6F3A6F4A1F5F17A000A805FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6F481F5F17A000A805FB /* LaunchScreen.storyboard */; };
 		6F3A6F551F5F17A000A805FB /* wawaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A6F541F5F17A000A805FB /* wawaTests.m */; };
+		6F3A6F681F5F18D800A805FB /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A6F611F5F18D800A805FB /* UIView+SDExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42F5B37EAF63675639584096 /* libPods-wawa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wawa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54B0F750E7C41712D468CFD8 /* Pods-wawa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wawa.release.xcconfig"; path = "Pods/Target Support Files/Pods-wawa/Pods-wawa.release.xcconfig"; sourceTree = "<group>"; };
 		6F3A6F371F5F17A000A805FB /* wawa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wawa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F3A6F3B1F5F17A000A805FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6F3A6F3D1F5F17A000A805FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +44,10 @@
 		6F3A6F501F5F17A000A805FB /* wawaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wawaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F3A6F541F5F17A000A805FB /* wawaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wawaTests.m; sourceTree = "<group>"; };
 		6F3A6F561F5F17A000A805FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F3A6F601F5F18D800A805FB /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		6F3A6F611F5F18D800A805FB /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		6F3A6F631F5F18D800A805FB /* WConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WConst.h; sourceTree = "<group>"; };
+		A1E69A7BD7865441EDC1ADE7 /* Pods-wawa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wawa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wawa/Pods-wawa.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				154703AC742799E1286E9978 /* libPods-wawa.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +75,8 @@
 				6F3A6F391F5F17A000A805FB /* wawa */,
 				6F3A6F531F5F17A000A805FB /* wawaTests */,
 				6F3A6F381F5F17A000A805FB /* Products */,
+				C88FEACF9B0B76DA047E6EDE /* Pods */,
+				FCDDB63A865D04B116AB72BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,14 +92,15 @@
 		6F3A6F391F5F17A000A805FB /* wawa */ = {
 			isa = PBXGroup;
 			children = (
+				6F3A6F5F1F5F18D800A805FB /* Category */,
+				6F3A6F621F5F18D800A805FB /* ConstantDefine */,
+				6F3A6F641F5F18D800A805FB /* Main */,
+				6F3A6F651F5F18D800A805FB /* Manager */,
+				6F3A6F661F5F18D800A805FB /* NetWork */,
+				6F3A6F671F5F18D800A805FB /* ResourceFile */,
 				6F3A6F3D1F5F17A000A805FB /* AppDelegate.h */,
 				6F3A6F3E1F5F17A000A805FB /* AppDelegate.m */,
-				6F3A6F401F5F17A000A805FB /* ViewController.h */,
-				6F3A6F411F5F17A000A805FB /* ViewController.m */,
-				6F3A6F431F5F17A000A805FB /* Main.storyboard */,
 				6F3A6F461F5F17A000A805FB /* Assets.xcassets */,
-				6F3A6F481F5F17A000A805FB /* LaunchScreen.storyboard */,
-				6F3A6F4B1F5F17A000A805FB /* Info.plist */,
 				6F3A6F3A1F5F17A000A805FB /* Supporting Files */,
 			);
 			path = wawa;
@@ -97,6 +109,11 @@
 		6F3A6F3A1F5F17A000A805FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6F3A6F401F5F17A000A805FB /* ViewController.h */,
+				6F3A6F411F5F17A000A805FB /* ViewController.m */,
+				6F3A6F431F5F17A000A805FB /* Main.storyboard */,
+				6F3A6F481F5F17A000A805FB /* LaunchScreen.storyboard */,
+				6F3A6F4B1F5F17A000A805FB /* Info.plist */,
 				6F3A6F3B1F5F17A000A805FB /* main.m */,
 			);
 			name = "Supporting Files";
@@ -111,6 +128,68 @@
 			path = wawaTests;
 			sourceTree = "<group>";
 		};
+		6F3A6F5F1F5F18D800A805FB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6F3A6F601F5F18D800A805FB /* UIView+SDExtension.h */,
+				6F3A6F611F5F18D800A805FB /* UIView+SDExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		6F3A6F621F5F18D800A805FB /* ConstantDefine */ = {
+			isa = PBXGroup;
+			children = (
+				6F3A6F631F5F18D800A805FB /* WConst.h */,
+			);
+			path = ConstantDefine;
+			sourceTree = "<group>";
+		};
+		6F3A6F641F5F18D800A805FB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6F3A6F651F5F18D800A805FB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		6F3A6F661F5F18D800A805FB /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		6F3A6F671F5F18D800A805FB /* ResourceFile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ResourceFile;
+			sourceTree = "<group>";
+		};
+		C88FEACF9B0B76DA047E6EDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1E69A7BD7865441EDC1ADE7 /* Pods-wawa.debug.xcconfig */,
+				54B0F750E7C41712D468CFD8 /* Pods-wawa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FCDDB63A865D04B116AB72BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42F5B37EAF63675639584096 /* libPods-wawa.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F3A6F591F5F17A000A805FB /* Build configuration list for PBXNativeTarget "wawa" */;
 			buildPhases = (
+				C1D1A60B3FF3DD56752F0922 /* [CP] Check Pods Manifest.lock */,
 				6F3A6F331F5F17A000A805FB /* Sources */,
 				6F3A6F341F5F17A000A805FB /* Frameworks */,
 				6F3A6F351F5F17A000A805FB /* Resources */,
+				47028FC8A08733D0BCCB4562 /* [CP] Embed Pods Frameworks */,
+				FE892819FB8D3AF3E5757EF5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +291,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47028FC8A08733D0BCCB4562 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wawa/Pods-wawa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1D1A60B3FF3DD56752F0922 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wawa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE892819FB8D3AF3E5757EF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wawa/Pods-wawa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6F3A6F331F5F17A000A805FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -217,6 +350,7 @@
 				6F3A6F421F5F17A000A805FB /* ViewController.m in Sources */,
 				6F3A6F3F1F5F17A000A805FB /* AppDelegate.m in Sources */,
 				6F3A6F3C1F5F17A000A805FB /* main.m in Sources */,
+				6F3A6F681F5F18D800A805FB /* UIView+SDExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +486,7 @@
 		};
 		6F3A6F5A1F5F17A000A805FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1E69A7BD7865441EDC1ADE7 /* Pods-wawa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9LZL6996FC;
@@ -364,6 +499,7 @@
 		};
 		6F3A6F5B1F5F17A000A805FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B0F750E7C41712D468CFD8 /* Pods-wawa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9LZL6996FC;
@@ -417,6 +553,7 @@
 				6F3A6F5B1F5F17A000A805FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F3A6F5C1F5F17A000A805FB /* Build configuration list for PBXNativeTarget "wawaTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +562,7 @@
 				6F3A6F5E1F5F17A000A805FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
