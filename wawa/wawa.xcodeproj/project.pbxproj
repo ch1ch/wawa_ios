@@ -16,6 +16,17 @@
 		6F3A6F4A1F5F17A000A805FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6F481F5F17A000A805FB /* LaunchScreen.storyboard */; };
 		6F3A6F551F5F17A000A805FB /* wawaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A6F541F5F17A000A805FB /* wawaTests.m */; };
 		6F3A6F681F5F18D800A805FB /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A6F611F5F18D800A805FB /* UIView+SDExtension.m */; };
+		6F3A6F811F62EF5100A805FB /* TXLiteAVSDK_Smart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3A6F801F62EF5100A805FB /* TXLiteAVSDK_Smart.framework */; };
+		6F3A6F831F62EF8D00A805FB /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3A6F821F62EF8D00A805FB /* VideoToolbox.framework */; };
+		6F3A6F851F62EF9700A805FB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3A6F841F62EF9700A805FB /* SystemConfiguration.framework */; };
+		6F3A6F871F62EFA700A805FB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3A6F861F62EFA700A805FB /* CoreTelephony.framework */; };
+		6F3A6F891F62EFAD00A805FB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3A6F881F62EFAD00A805FB /* AVFoundation.framework */; };
+		6F3A6F8B1F62EFB600A805FB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3A6F8A1F62EFB600A805FB /* CoreMedia.framework */; };
+		6F3A6F8D1F62EFBE00A805FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3A6F8C1F62EFBE00A805FB /* CoreGraphics.framework */; };
+		6F3A6F8F1F62EFC900A805FB /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3A6F8E1F62EFC900A805FB /* libstdc++.tbd */; };
+		6F3A6F911F62EFD600A805FB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3A6F901F62EFD600A805FB /* libz.tbd */; };
+		6F3A6F931F62EFF500A805FB /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3A6F921F62EFF500A805FB /* libiconv.tbd */; };
+		6F3A6F951F62F00100A805FB /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3A6F941F62F00100A805FB /* libresolv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +58,17 @@
 		6F3A6F601F5F18D800A805FB /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
 		6F3A6F611F5F18D800A805FB /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
 		6F3A6F631F5F18D800A805FB /* WConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WConst.h; sourceTree = "<group>"; };
+		6F3A6F801F62EF5100A805FB /* TXLiteAVSDK_Smart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TXLiteAVSDK_Smart.framework; sourceTree = "<group>"; };
+		6F3A6F821F62EF8D00A805FB /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		6F3A6F841F62EF9700A805FB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6F3A6F861F62EFA700A805FB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		6F3A6F881F62EFAD00A805FB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6F3A6F8A1F62EFB600A805FB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		6F3A6F8C1F62EFBE00A805FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6F3A6F8E1F62EFC900A805FB /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		6F3A6F901F62EFD600A805FB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		6F3A6F921F62EFF500A805FB /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		6F3A6F941F62F00100A805FB /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		A1E69A7BD7865441EDC1ADE7 /* Pods-wawa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wawa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wawa/Pods-wawa.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +77,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F3A6F951F62F00100A805FB /* libresolv.tbd in Frameworks */,
+				6F3A6F931F62EFF500A805FB /* libiconv.tbd in Frameworks */,
+				6F3A6F911F62EFD600A805FB /* libz.tbd in Frameworks */,
+				6F3A6F8F1F62EFC900A805FB /* libstdc++.tbd in Frameworks */,
+				6F3A6F8D1F62EFBE00A805FB /* CoreGraphics.framework in Frameworks */,
+				6F3A6F8B1F62EFB600A805FB /* CoreMedia.framework in Frameworks */,
+				6F3A6F891F62EFAD00A805FB /* AVFoundation.framework in Frameworks */,
+				6F3A6F871F62EFA700A805FB /* CoreTelephony.framework in Frameworks */,
+				6F3A6F851F62EF9700A805FB /* SystemConfiguration.framework in Frameworks */,
+				6F3A6F831F62EF8D00A805FB /* VideoToolbox.framework in Frameworks */,
+				6F3A6F811F62EF5100A805FB /* TXLiteAVSDK_Smart.framework in Frameworks */,
 				154703AC742799E1286E9978 /* libPods-wawa.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +125,7 @@
 		6F3A6F391F5F17A000A805FB /* wawa */ = {
 			isa = PBXGroup;
 			children = (
+				6F3A6F7E1F62EF5100A805FB /* ThirdPartyLibraries */,
 				6F3A6F5F1F5F18D800A805FB /* Category */,
 				6F3A6F621F5F18D800A805FB /* ConstantDefine */,
 				6F3A6F641F5F18D800A805FB /* Main */,
@@ -173,6 +207,22 @@
 			path = ResourceFile;
 			sourceTree = "<group>";
 		};
+		6F3A6F7E1F62EF5100A805FB /* ThirdPartyLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				6F3A6F7F1F62EF5100A805FB /* TXLiveSDK */,
+			);
+			path = ThirdPartyLibraries;
+			sourceTree = "<group>";
+		};
+		6F3A6F7F1F62EF5100A805FB /* TXLiveSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6F3A6F801F62EF5100A805FB /* TXLiteAVSDK_Smart.framework */,
+			);
+			path = TXLiveSDK;
+			sourceTree = "<group>";
+		};
 		C88FEACF9B0B76DA047E6EDE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +235,16 @@
 		FCDDB63A865D04B116AB72BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6F3A6F941F62F00100A805FB /* libresolv.tbd */,
+				6F3A6F921F62EFF500A805FB /* libiconv.tbd */,
+				6F3A6F901F62EFD600A805FB /* libz.tbd */,
+				6F3A6F8E1F62EFC900A805FB /* libstdc++.tbd */,
+				6F3A6F8C1F62EFBE00A805FB /* CoreGraphics.framework */,
+				6F3A6F8A1F62EFB600A805FB /* CoreMedia.framework */,
+				6F3A6F881F62EFAD00A805FB /* AVFoundation.framework */,
+				6F3A6F861F62EFA700A805FB /* CoreTelephony.framework */,
+				6F3A6F841F62EF9700A805FB /* SystemConfiguration.framework */,
+				6F3A6F821F62EF8D00A805FB /* VideoToolbox.framework */,
 				42F5B37EAF63675639584096 /* libPods-wawa.a */,
 			);
 			name = Frameworks;
@@ -490,6 +550,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9LZL6996FC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wawa/ThirdPartyLibraries/TXLiveSDK",
+				);
 				INFOPLIST_FILE = wawa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.legendream.wawa;
@@ -503,6 +567,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9LZL6996FC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wawa/ThirdPartyLibraries/TXLiveSDK",
+				);
 				INFOPLIST_FILE = wawa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.legendream.wawa;
