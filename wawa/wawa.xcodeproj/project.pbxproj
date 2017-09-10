@@ -27,6 +27,27 @@
 		6F3A6F911F62EFD600A805FB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3A6F901F62EFD600A805FB /* libz.tbd */; };
 		6F3A6F931F62EFF500A805FB /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3A6F921F62EFF500A805FB /* libiconv.tbd */; };
 		6F3A6F951F62F00100A805FB /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3A6F941F62F00100A805FB /* libresolv.tbd */; };
+		6F3A6F9C1F62F64500A805FB /* WLiveRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A6F9B1F62F64500A805FB /* WLiveRoomViewController.m */; };
+		6F3A6F9F1F62F65A00A805FB /* WPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A6F9E1F62F65A00A805FB /* WPlayerViewController.m */; };
+		6F3A6FA21F62F6E400A805FB /* WPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A6FA11F62F6E400A805FB /* WPlayerManager.m */; };
+		6F3A6FA91F62FE5000A805FB /* WMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A6FA81F62FE5000A805FB /* WMainViewController.m */; };
+		6F3A6FB21F63D6CD00A805FB /* WFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A6FB11F63D6CD00A805FB /* WFunctionViewController.m */; };
+		6F3A6FBC1F63D8D700A805FB /* border@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6FB61F63D8D700A805FB /* border@2x.png */; };
+		6F3A6FBD1F63D8D700A805FB /* border@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6FB71F63D8D700A805FB /* border@3x.png */; };
+		6F3A6FBE1F63D8D700A805FB /* start@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6FB81F63D8D700A805FB /* start@2x.png */; };
+		6F3A6FBF1F63D8D700A805FB /* start@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6FB91F63D8D700A805FB /* start@3x.png */; };
+		6F3A6FC21F63DF4400A805FB /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6FC01F63DF4400A805FB /* back@2x.png */; };
+		6F3A6FC31F63DF4400A805FB /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6FC11F63DF4400A805FB /* back@3x.png */; };
+		6F3A6FCC1F6448B700A805FB /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3A6FCB1F6448B700A805FB /* BaseWebViewController.m */; };
+		6F3A6FCE1F64D78600A805FB /* Test.html in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6FCD1F64D78600A805FB /* Test.html */; };
+		6F3A6FD71F64DA3B00A805FB /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6FCF1F64DA3B00A805FB /* bg@2x.png */; };
+		6F3A6FD81F64DA3B00A805FB /* bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6FD01F64DA3B00A805FB /* bg@3x.png */; };
+		6F3A6FD91F64DA3B00A805FB /* recharge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6FD11F64DA3B00A805FB /* recharge@2x.png */; };
+		6F3A6FDA1F64DA3B00A805FB /* recharge@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6FD21F64DA3B00A805FB /* recharge@3x.png */; };
+		6F3A6FDB1F64DA3B00A805FB /* rechargeBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6FD31F64DA3B00A805FB /* rechargeBg@2x.png */; };
+		6F3A6FDC1F64DA3B00A805FB /* rechargeBg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6FD41F64DA3B00A805FB /* rechargeBg@3x.png */; };
+		6F3A6FDD1F64DA3B00A805FB /* startBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6FD51F64DA3B00A805FB /* startBg@2x.png */; };
+		6F3A6FDE1F64DA3B00A805FB /* startBg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F3A6FD61F64DA3B00A805FB /* startBg@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +78,6 @@
 		6F3A6F561F5F17A000A805FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F3A6F601F5F18D800A805FB /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
 		6F3A6F611F5F18D800A805FB /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
-		6F3A6F631F5F18D800A805FB /* WConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WConst.h; sourceTree = "<group>"; };
 		6F3A6F801F62EF5100A805FB /* TXLiteAVSDK_Smart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TXLiteAVSDK_Smart.framework; sourceTree = "<group>"; };
 		6F3A6F821F62EF8D00A805FB /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		6F3A6F841F62EF9700A805FB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -69,6 +89,35 @@
 		6F3A6F901F62EFD600A805FB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		6F3A6F921F62EFF500A805FB /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		6F3A6F941F62F00100A805FB /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		6F3A6F9A1F62F64500A805FB /* WLiveRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLiveRoomViewController.h; sourceTree = "<group>"; };
+		6F3A6F9B1F62F64500A805FB /* WLiveRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLiveRoomViewController.m; sourceTree = "<group>"; };
+		6F3A6F9D1F62F65A00A805FB /* WPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPlayerViewController.h; sourceTree = "<group>"; };
+		6F3A6F9E1F62F65A00A805FB /* WPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPlayerViewController.m; sourceTree = "<group>"; };
+		6F3A6FA01F62F6E400A805FB /* WPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPlayerManager.h; sourceTree = "<group>"; };
+		6F3A6FA11F62F6E400A805FB /* WPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPlayerManager.m; sourceTree = "<group>"; };
+		6F3A6FA31F62F9DF00A805FB /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		6F3A6FA41F62FA8000A805FB /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6F3A6FA71F62FE5000A805FB /* WMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMainViewController.h; sourceTree = "<group>"; };
+		6F3A6FA81F62FE5000A805FB /* WMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMainViewController.m; sourceTree = "<group>"; };
+		6F3A6FB01F63D6CD00A805FB /* WFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFunctionViewController.h; sourceTree = "<group>"; };
+		6F3A6FB11F63D6CD00A805FB /* WFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFunctionViewController.m; sourceTree = "<group>"; };
+		6F3A6FB61F63D8D700A805FB /* border@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "border@2x.png"; sourceTree = "<group>"; };
+		6F3A6FB71F63D8D700A805FB /* border@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "border@3x.png"; sourceTree = "<group>"; };
+		6F3A6FB81F63D8D700A805FB /* start@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start@2x.png"; sourceTree = "<group>"; };
+		6F3A6FB91F63D8D700A805FB /* start@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start@3x.png"; sourceTree = "<group>"; };
+		6F3A6FC01F63DF4400A805FB /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		6F3A6FC11F63DF4400A805FB /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@3x.png"; sourceTree = "<group>"; };
+		6F3A6FCA1F6448B700A805FB /* BaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
+		6F3A6FCB1F6448B700A805FB /* BaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
+		6F3A6FCD1F64D78600A805FB /* Test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Test.html; sourceTree = "<group>"; };
+		6F3A6FCF1F64DA3B00A805FB /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		6F3A6FD01F64DA3B00A805FB /* bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@3x.png"; sourceTree = "<group>"; };
+		6F3A6FD11F64DA3B00A805FB /* recharge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recharge@2x.png"; sourceTree = "<group>"; };
+		6F3A6FD21F64DA3B00A805FB /* recharge@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recharge@3x.png"; sourceTree = "<group>"; };
+		6F3A6FD31F64DA3B00A805FB /* rechargeBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rechargeBg@2x.png"; sourceTree = "<group>"; };
+		6F3A6FD41F64DA3B00A805FB /* rechargeBg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rechargeBg@3x.png"; sourceTree = "<group>"; };
+		6F3A6FD51F64DA3B00A805FB /* startBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "startBg@2x.png"; sourceTree = "<group>"; };
+		6F3A6FD61F64DA3B00A805FB /* startBg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "startBg@3x.png"; sourceTree = "<group>"; };
 		A1E69A7BD7865441EDC1ADE7 /* Pods-wawa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wawa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wawa/Pods-wawa.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +174,7 @@
 		6F3A6F391F5F17A000A805FB /* wawa */ = {
 			isa = PBXGroup;
 			children = (
+				6F3A6FC61F64486700A805FB /* Base */,
 				6F3A6F7E1F62EF5100A805FB /* ThirdPartyLibraries */,
 				6F3A6F5F1F5F18D800A805FB /* Category */,
 				6F3A6F621F5F18D800A805FB /* ConstantDefine */,
@@ -149,6 +199,8 @@
 				6F3A6F481F5F17A000A805FB /* LaunchScreen.storyboard */,
 				6F3A6F4B1F5F17A000A805FB /* Info.plist */,
 				6F3A6F3B1F5F17A000A805FB /* main.m */,
+				6F3A6FA31F62F9DF00A805FB /* Header.h */,
+				6F3A6FA41F62FA8000A805FB /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -174,7 +226,6 @@
 		6F3A6F621F5F18D800A805FB /* ConstantDefine */ = {
 			isa = PBXGroup;
 			children = (
-				6F3A6F631F5F18D800A805FB /* WConst.h */,
 			);
 			path = ConstantDefine;
 			sourceTree = "<group>";
@@ -182,6 +233,9 @@
 		6F3A6F641F5F18D800A805FB /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				6F3A6FA51F62FE2900A805FB /* Login */,
+				6F3A6FA61F62FE2900A805FB /* Main */,
+				6F3A6F961F62F61700A805FB /* Live */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -189,6 +243,8 @@
 		6F3A6F651F5F18D800A805FB /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				6F3A6FA01F62F6E400A805FB /* WPlayerManager.h */,
+				6F3A6FA11F62F6E400A805FB /* WPlayerManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -203,6 +259,8 @@
 		6F3A6F671F5F18D800A805FB /* ResourceFile */ = {
 			isa = PBXGroup;
 			children = (
+				6F3A6FCD1F64D78600A805FB /* Test.html */,
+				6F3A6FB31F63D8D700A805FB /* images */,
 			);
 			path = ResourceFile;
 			sourceTree = "<group>";
@@ -221,6 +279,113 @@
 				6F3A6F801F62EF5100A805FB /* TXLiteAVSDK_Smart.framework */,
 			);
 			path = TXLiveSDK;
+			sourceTree = "<group>";
+		};
+		6F3A6F961F62F61700A805FB /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				6F3A6F981F62F61700A805FB /* Model */,
+				6F3A6F991F62F61700A805FB /* View */,
+				6F3A6F971F62F61700A805FB /* Controller */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		6F3A6F971F62F61700A805FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6F3A6F9A1F62F64500A805FB /* WLiveRoomViewController.h */,
+				6F3A6F9B1F62F64500A805FB /* WLiveRoomViewController.m */,
+				6F3A6F9D1F62F65A00A805FB /* WPlayerViewController.h */,
+				6F3A6F9E1F62F65A00A805FB /* WPlayerViewController.m */,
+				6F3A6FB01F63D6CD00A805FB /* WFunctionViewController.h */,
+				6F3A6FB11F63D6CD00A805FB /* WFunctionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6F3A6F981F62F61700A805FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6F3A6F991F62F61700A805FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6F3A6FA51F62FE2900A805FB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6F3A6FA61F62FE2900A805FB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6F3A6FA71F62FE5000A805FB /* WMainViewController.h */,
+				6F3A6FA81F62FE5000A805FB /* WMainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6F3A6FB31F63D8D700A805FB /* images */ = {
+			isa = PBXGroup;
+			children = (
+				6F3A6FCF1F64DA3B00A805FB /* bg@2x.png */,
+				6F3A6FD01F64DA3B00A805FB /* bg@3x.png */,
+				6F3A6FD11F64DA3B00A805FB /* recharge@2x.png */,
+				6F3A6FD21F64DA3B00A805FB /* recharge@3x.png */,
+				6F3A6FD31F64DA3B00A805FB /* rechargeBg@2x.png */,
+				6F3A6FD41F64DA3B00A805FB /* rechargeBg@3x.png */,
+				6F3A6FD51F64DA3B00A805FB /* startBg@2x.png */,
+				6F3A6FD61F64DA3B00A805FB /* startBg@3x.png */,
+				6F3A6FC01F63DF4400A805FB /* back@2x.png */,
+				6F3A6FC11F63DF4400A805FB /* back@3x.png */,
+				6F3A6FB61F63D8D700A805FB /* border@2x.png */,
+				6F3A6FB71F63D8D700A805FB /* border@3x.png */,
+				6F3A6FB81F63D8D700A805FB /* start@2x.png */,
+				6F3A6FB91F63D8D700A805FB /* start@3x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		6F3A6FC61F64486700A805FB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6F3A6FC81F64488A00A805FB /* Model */,
+				6F3A6FC91F64488A00A805FB /* View */,
+				6F3A6FC71F64488A00A805FB /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6F3A6FC71F64488A00A805FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6F3A6FCA1F6448B700A805FB /* BaseWebViewController.h */,
+				6F3A6FCB1F6448B700A805FB /* BaseWebViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6F3A6FC81F64488A00A805FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6F3A6FC91F64488A00A805FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C88FEACF9B0B76DA047E6EDE /* Pods */ = {
@@ -336,9 +501,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F3A6FD81F64DA3B00A805FB /* bg@3x.png in Resources */,
+				6F3A6FCE1F64D78600A805FB /* Test.html in Resources */,
+				6F3A6FBC1F63D8D700A805FB /* border@2x.png in Resources */,
+				6F3A6FDB1F64DA3B00A805FB /* rechargeBg@2x.png in Resources */,
 				6F3A6F4A1F5F17A000A805FB /* LaunchScreen.storyboard in Resources */,
+				6F3A6FDA1F64DA3B00A805FB /* recharge@3x.png in Resources */,
 				6F3A6F471F5F17A000A805FB /* Assets.xcassets in Resources */,
+				6F3A6FD71F64DA3B00A805FB /* bg@2x.png in Resources */,
+				6F3A6FD91F64DA3B00A805FB /* recharge@2x.png in Resources */,
+				6F3A6FDC1F64DA3B00A805FB /* rechargeBg@3x.png in Resources */,
+				6F3A6FC31F63DF4400A805FB /* back@3x.png in Resources */,
+				6F3A6FBD1F63D8D700A805FB /* border@3x.png in Resources */,
 				6F3A6F451F5F17A000A805FB /* Main.storyboard in Resources */,
+				6F3A6FDE1F64DA3B00A805FB /* startBg@3x.png in Resources */,
+				6F3A6FDD1F64DA3B00A805FB /* startBg@2x.png in Resources */,
+				6F3A6FBF1F63D8D700A805FB /* start@3x.png in Resources */,
+				6F3A6FC21F63DF4400A805FB /* back@2x.png in Resources */,
+				6F3A6FBE1F63D8D700A805FB /* start@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,8 +589,14 @@
 			files = (
 				6F3A6F421F5F17A000A805FB /* ViewController.m in Sources */,
 				6F3A6F3F1F5F17A000A805FB /* AppDelegate.m in Sources */,
+				6F3A6FA21F62F6E400A805FB /* WPlayerManager.m in Sources */,
+				6F3A6FA91F62FE5000A805FB /* WMainViewController.m in Sources */,
+				6F3A6F9C1F62F64500A805FB /* WLiveRoomViewController.m in Sources */,
+				6F3A6FB21F63D6CD00A805FB /* WFunctionViewController.m in Sources */,
 				6F3A6F3C1F5F17A000A805FB /* main.m in Sources */,
 				6F3A6F681F5F18D800A805FB /* UIView+SDExtension.m in Sources */,
+				6F3A6FCC1F6448B700A805FB /* BaseWebViewController.m in Sources */,
+				6F3A6F9F1F62F65A00A805FB /* WPlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +740,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/wawa/ThirdPartyLibraries/TXLiveSDK",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = wawa/PrefixHeader.pch;
 				INFOPLIST_FILE = wawa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.legendream.wawa;
@@ -571,6 +759,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/wawa/ThirdPartyLibraries/TXLiveSDK",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = wawa/PrefixHeader.pch;
 				INFOPLIST_FILE = wawa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.legendream.wawa;
