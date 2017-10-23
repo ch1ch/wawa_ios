@@ -1,0 +1,2986 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ILiveRoomManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">ILiveSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">tencent.com</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/getInstance">+ getInstance</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/bindIMGroupId:">- bindIMGroupId:</option>
+		
+		<option value="//api/name/cancelAllView:failed:">- cancelAllView:failed:</option>
+		
+		<option value="//api/name/cancelViewList:srcTypeList:succ:failed:">- cancelViewList:srcTypeList:succ:failed:</option>
+		
+		<option value="//api/name/changeRole:succ:failed:">- changeRole:succ:failed:</option>
+		
+		<option value="//api/name/createRoom:option:succ:failed:">- createRoom:option:succ:failed:</option>
+		
+		<option value="//api/name/enableCamera:enable:succ:failed:">- enableCamera:enable:succ:failed:</option>
+		
+		<option value="//api/name/enableMic:succ:failed:">- enableMic:succ:failed:</option>
+		
+		<option value="//api/name/enableScreenShare:succ:failed:">- enableScreenShare:succ:failed:</option>
+		
+		<option value="//api/name/enableSpeaker:succ:failed:">- enableSpeaker:succ:failed:</option>
+		
+		<option value="//api/name/getCurAudioMode">- getCurAudioMode</option>
+		
+		<option value="//api/name/getCurCameraPos">- getCurCameraPos</option>
+		
+		<option value="//api/name/getCurCameraState">- getCurCameraState</option>
+		
+		<option value="//api/name/getCurMicState">- getCurMicState</option>
+		
+		<option value="//api/name/getCurScreenState">- getCurScreenState</option>
+		
+		<option value="//api/name/getCurSpeakerState">- getCurSpeakerState</option>
+		
+		<option value="//api/name/getFrameDispatcher">- getFrameDispatcher</option>
+		
+		<option value="//api/name/getIMGroupId">- getIMGroupId</option>
+		
+		<option value="//api/name/getQualityData">- getQualityData</option>
+		
+		<option value="//api/name/getRoomId">- getRoomId</option>
+		
+		<option value="//api/name/joinRoom:option:succ:failed:">- joinRoom:option:succ:failed:</option>
+		
+		<option value="//api/name/linkRoom:identifier:authBuff:succ:failed:">- linkRoom:identifier:authBuff:succ:failed:</option>
+		
+		<option value="//api/name/quitRoom:failed:">- quitRoom:failed:</option>
+		
+		<option value="//api/name/requestViewList:srcTypeList:succ:failed:">- requestViewList:srcTypeList:succ:failed:</option>
+		
+		<option value="//api/name/sendC2CMessage:message:succ:failed:">- sendC2CMessage:message:succ:failed:</option>
+		
+		<option value="//api/name/sendGroupMessage:succ:failed:">- sendGroupMessage:succ:failed:</option>
+		
+		<option value="//api/name/sendOnlineC2CMessage:message:succ:failed:">- sendOnlineC2CMessage:message:succ:failed:</option>
+		
+		<option value="//api/name/sendOnlineGroupMessage:succ:failed:">- sendOnlineGroupMessage:succ:failed:</option>
+		
+		<option value="//api/name/setAudioMode:">- setAudioMode:</option>
+		
+		<option value="//api/name/setBeauty:">- setBeauty:</option>
+		
+		<option value="//api/name/setLocalScreenVideoDelegate:">- setLocalScreenVideoDelegate:</option>
+		
+		<option value="//api/name/setLocalVideoDelegate:">- setLocalVideoDelegate:</option>
+		
+		<option value="//api/name/setMediaVideoDelegate:">- setMediaVideoDelegate:</option>
+		
+		<option value="//api/name/setRemoteVideoDelegate:">- setRemoteVideoDelegate:</option>
+		
+		<option value="//api/name/setScreenShareRect:">- setScreenShareRect:</option>
+		
+		<option value="//api/name/setScreenVideoDelegate:">- setScreenVideoDelegate:</option>
+		
+		<option value="//api/name/setWhite:">- setWhite:</option>
+		
+		<option value="//api/name/startPushStream:succ:failed:">- startPushStream:succ:failed:</option>
+		
+		<option value="//api/name/startRecordVideo:succ:failed:">- startRecordVideo:succ:failed:</option>
+		
+		<option value="//api/name/stopPushStreams:succ:failed:">- stopPushStreams:succ:failed:</option>
+		
+		<option value="//api/name/stopRecordVideo:failed:">- stopRecordVideo:failed:</option>
+		
+		<option value="//api/name/switchCamera:failed:">- switchCamera:failed:</option>
+		
+		<option value="//api/name/switchRoom:option:succ:failed:">- switchRoom:option:succ:failed:</option>
+		
+		<option value="//api/name/unLinkRoom:failed:">- unLinkRoom:failed:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ILiveRoomManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ILiveRoomManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>ILiveSDK房间管理器类</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getInstance" title="getInstance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getInstance">+&nbsp;getInstance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取房间管理器单例</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)getInstance</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>房间管理器单例</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取房间管理器单例</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createRoom:option:succ:failed:" title="createRoom:option:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createRoom:option:succ:failed:">&ndash;&nbsp;createRoom:option:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>创建直播间（主播端调用）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createRoom:(int)<em>roomId</em> option:(ILiveRoomOption *)<em>option</em> succ:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>roomId</code></th>
+						<td><p>直播间ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>option</code></th>
+						<td><p>房间配置</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>创建直播间成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>创建直播间失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>创建直播间（主播端调用）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/joinRoom:option:succ:failed:" title="joinRoom:option:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/joinRoom:option:succ:failed:">&ndash;&nbsp;joinRoom:option:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>加入直播间（观众端调用）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)joinRoom:(int)<em>roomId</em> option:(ILiveRoomOption *)<em>option</em> succ:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>roomId</code></th>
+						<td><p>直播间ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>option</code></th>
+						<td><p>房间配置</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>加入直播间成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>加入直播间失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>加入直播间（观众端调用）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/switchRoom:option:succ:failed:" title="switchRoom:option:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/switchRoom:option:succ:failed:">&ndash;&nbsp;switchRoom:option:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>切换直播间（观众端调用）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)switchRoom:(int)<em>roomId</em> option:(ILiveRoomOption *)<em>option</em> succ:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>roomId</code></th>
+						<td><p>直播间ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>option</code></th>
+						<td><p>房间配置</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>加入直播间成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>加入直播间失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>切换直播间（观众端调用）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/quitRoom:failed:" title="quitRoom:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/quitRoom:failed:">&ndash;&nbsp;quitRoom:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>退出直播间(退出im群租和音视频房间)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)quitRoom:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>退出直播间成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>退出直播间失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>退出直播间(退出im群租和音视频房间)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/linkRoom:identifier:authBuff:succ:failed:" title="linkRoom:identifier:authBuff:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/linkRoom:identifier:authBuff:succ:failed:">&ndash;&nbsp;linkRoom:identifier:authBuff:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>跨房连麦</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)linkRoom:(int)<em>roomId</em> identifier:(NSString *)<em>toId</em> authBuff:(NSString *)<em>authBuf</em> succ:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>roomId</code></th>
+						<td><p>对方房间号</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>toId</code></th>
+						<td><p>对方id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authBuf</code></th>
+						<td><p>跨房连麦密钥</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>跨房连麦</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unLinkRoom:failed:" title="unLinkRoom:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unLinkRoom:failed:">&ndash;&nbsp;unLinkRoom:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>结束跨房连麦(将结束与所有房间的跨房连麦)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)unLinkRoom:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>结束跨房连麦(将结束与所有房间的跨房连麦)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setBeauty:" title="setBeauty:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setBeauty:">&ndash;&nbsp;setBeauty:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置美颜（设备支持美颜并摄像头打开）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)setBeauty:(float)<em>value</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>value</code></th>
+						<td><p>取值范围在0-9之间，0代表关闭美颜</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>BOOL  设置是否成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置美颜（设备支持美颜并摄像头打开）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setWhite:" title="setWhite:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setWhite:">&ndash;&nbsp;setWhite:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置美白（设备支持美颜并摄像头打开）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)setWhite:(float)<em>value</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>value</code></th>
+						<td><p>取值范围在0-9之间，0代表关闭美白</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>BOOL   设置是否成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置美白（设备支持美颜并摄像头打开）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestViewList:srcTypeList:succ:failed:" title="requestViewList:srcTypeList:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestViewList:srcTypeList:succ:failed:">&ndash;&nbsp;requestViewList:srcTypeList:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>同时请求一个或多个成员的视频画面。同一时刻只能请求一次成员的画面，并且必须等待异步结果返回后，才能进行新的请求画面操作。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestViewList:(NSArray *)<em>identifierList</em> srcTypeList:(NSArray *)<em>srcTypeList</em> succ:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifierList</code></th>
+						<td><p>请求的成员id列表。传递成员的identifier(NSString*)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>srcTypeList</code></th>
+						<td><p>视频源类型列表。传递成员的avVideoSrcType(NSNumber*)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>请求成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>请求失败回调</p>
+
+<p>QAV_ERR_BUSY表示上一次操作(包括requestViewList\cancelViewList\cancelAllView)还在进行中；QAV_ERR_FAILED表示操作失败，可能是因为所请求的成员当前已经没有对应视频源的视频、所请求成员已经退出房间等。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>同时请求一个或多个成员的视频画面。同一时刻只能请求一次成员的画面，并且必须等待异步结果返回后，才能进行新的请求画面操作。</p>
+
+<p>@remark
+. requestViewList和cancelAllView不能并发执行，即同一时刻只能进行一种操作。
+. identifierList和srcTypeList的因素个数必须相等，同时每个元素是一一对应的。
+. 在请求画面前最好先检查该成员是否有对应的视频源。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelViewList:srcTypeList:succ:failed:" title="cancelViewList:srcTypeList:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelViewList:srcTypeList:succ:failed:">&ndash;&nbsp;cancelViewList:srcTypeList:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>取消指定用户的画面</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelViewList:(NSArray *)<em>identifierList</em> srcTypeList:(NSArray *)<em>srcTypeList</em> succ:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifierList</code></th>
+						<td><p>要取消画面的用户列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>srcTypeList</code></th>
+						<td><p>要取消画面的用户列表对应的视频类型</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>取消指定用户的画面</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelAllView:failed:" title="cancelAllView:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelAllView:failed:">&ndash;&nbsp;cancelAllView:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>取消所有请求的视频画面。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelAllView:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>取消成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>取消失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>取消所有请求的视频画面。</p>
+
+<p>@remark requestViewList和cancelAllView不能并发执行，即同一时刻只能进行一种操作。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableCamera:enable:succ:failed:" title="enableCamera:enable:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableCamera:enable:succ:failed:">&ndash;&nbsp;enableCamera:enable:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  打开/关闭 相机</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enableCamera:(cameraPos)<em>cameraPos</em> enable:(BOOL)<em>bEnable</em> succ:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cameraPos</code></th>
+						<td><p>相机位置 cameraPos</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bEnable</code></th>
+						<td><p>YES:打开 NO:关闭</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  打开/关闭 相机</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/switchCamera:failed:" title="switchCamera:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/switchCamera:failed:">&ndash;&nbsp;switchCamera:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>切换相机方向</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)switchCamera:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>切换相机方向</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableScreenShare:succ:failed:" title="enableScreenShare:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableScreenShare:succ:failed:">&ndash;&nbsp;enableScreenShare:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>屏幕分享
+移动端使用无效</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enableScreenShare:(BOOL)<em>bEnable</em> succ:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bEnable</code></th>
+						<td><p>开启屏幕分享</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>屏幕分享
+移动端使用无效</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setScreenShareRect:" title="setScreenShareRect:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setScreenShareRect:">&ndash;&nbsp;setScreenShareRect:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置屏幕分享区域(暂不支持指定窗口分享)
+移动端下设置无效、未开启屏幕分享时设置无效</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setScreenShareRect:(CGRect)<em>rect</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rect</code></th>
+						<td><p>分享区域 最小宽192，最小高144,如果小于最小值，内部会自动转化成最小值</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置屏幕分享区域(暂不支持指定窗口分享)
+移动端下设置无效、未开启屏幕分享时设置无效</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableMic:succ:failed:" title="enableMic:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableMic:succ:failed:">&ndash;&nbsp;enableMic:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>打开/关闭 麦克风</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enableMic:(BOOL)<em>bEnable</em> succ:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bEnable</code></th>
+						<td><p>YES:打开 NO:关闭</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>打开/关闭 麦克风</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableSpeaker:succ:failed:" title="enableSpeaker:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableSpeaker:succ:failed:">&ndash;&nbsp;enableSpeaker:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>打开/关闭 扬声器</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enableSpeaker:(BOOL)<em>bEnable</em> succ:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bEnable</code></th>
+						<td><p>YES:打开 NO:关闭</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>打开/关闭 扬声器</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAudioMode:" title="setAudioMode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAudioMode:">&ndash;&nbsp;setAudioMode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置声音模式(听筒或扬声器)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setAudioMode:(QAVOutputMode)<em>mode</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mode</code></th>
+						<td><p>声音模式</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置声音模式(听筒或扬声器)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRemoteVideoDelegate:" title="setRemoteVideoDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRemoteVideoDelegate:">&ndash;&nbsp;setRemoteVideoDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置远程画面代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setRemoteVideoDelegate:(id&lt;QAVRemoteVideoDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>远程画面代理（主要用于预处理）</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置远程画面代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLocalVideoDelegate:" title="setLocalVideoDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLocalVideoDelegate:">&ndash;&nbsp;setLocalVideoDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置本地画面代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setLocalVideoDelegate:(id&lt;QAVLocalVideoDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>本地画面代理</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置本地画面代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setScreenVideoDelegate:" title="setScreenVideoDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setScreenVideoDelegate:">&ndash;&nbsp;setScreenVideoDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置屏幕画面代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setScreenVideoDelegate:(id&lt;ILiveScreenVideoDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>屏幕画面代理</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置屏幕画面代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLocalScreenVideoDelegate:" title="setLocalScreenVideoDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLocalScreenVideoDelegate:">&ndash;&nbsp;setLocalScreenVideoDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置屏幕分享本地画面代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setLocalScreenVideoDelegate:(id&lt;QAVLocalScreenVideoDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>屏幕分享本地画面代理</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置屏幕分享本地画面代理</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setMediaVideoDelegate:" title="setMediaVideoDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMediaVideoDelegate:">&ndash;&nbsp;setMediaVideoDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置播片画面回调，预留接口，暂时不建议使用</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setMediaVideoDelegate:(id&lt;ILiveMediaVideoDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>播片代理</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置播片画面回调，预留接口，暂时不建议使用</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCurCameraPos" title="getCurCameraPos"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCurCameraPos">&ndash;&nbsp;getCurCameraPos</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取当前摄像头方位,返回－1表示摄像头没打开</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (cameraPos)getCurCameraPos</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>摄像头方位</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取当前摄像头方位,返回－1表示摄像头没打开</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCurCameraState" title="getCurCameraState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCurCameraState">&ndash;&nbsp;getCurCameraState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取当前摄像头状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)getCurCameraState</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES:打开 NO：关闭</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取当前摄像头状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCurScreenState" title="getCurScreenState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCurScreenState">&ndash;&nbsp;getCurScreenState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取当前屏幕分享状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)getCurScreenState</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES:打开 NO：关闭</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取当前屏幕分享状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCurMicState" title="getCurMicState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCurMicState">&ndash;&nbsp;getCurMicState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取当前麦克风状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)getCurMicState</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES:打开 NO：关闭</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取当前麦克风状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCurSpeakerState" title="getCurSpeakerState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCurSpeakerState">&ndash;&nbsp;getCurSpeakerState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取当前扬声器状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)getCurSpeakerState</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES:打开 NO：关闭</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取当前扬声器状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCurAudioMode" title="getCurAudioMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCurAudioMode">&ndash;&nbsp;getCurAudioMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取当前声音模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (QAVOutputMode)getCurAudioMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取当前声音模式</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRoomId" title="getRoomId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRoomId">&ndash;&nbsp;getRoomId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取房间id</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)getRoomId</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>房间id。这个房间id是 创建/加入 直播时传进去的id。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取房间id</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getIMGroupId" title="getIMGroupId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getIMGroupId">&ndash;&nbsp;getIMGroupId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取IM群组ID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getIMGroupId</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>IM群组ID</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取IM群组ID</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getQualityData" title="getQualityData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getQualityData">&ndash;&nbsp;getQualityData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取直播质量参数</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (ILiveQualityData *)getQualityData</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><a href="../Classes/ILiveQualityData.html">ILiveQualityData</a> 质量参数对象,获取失败返回nil</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取直播质量参数</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/changeRole:succ:failed:" title="changeRole:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/changeRole:succ:failed:">&ndash;&nbsp;changeRole:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>更改角色</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)changeRole:(NSString *)<em>role</em> succ:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>role</code></th>
+						<td><p>角色字符串 （由用户App的控制台生成）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>失败</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>更改角色</p><p>此前，角色被设定为在进入房间之前指定、进入房间之后不能动态修改。这个接口的作用
+             就是修改这一设定，即：在进入房间之后也能动态修改角色。业务测可以通过此接口让用
+             户在房间内动态调整音视频、网络参数，如将视频模式从清晰切换成流畅。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bindIMGroupId:" title="bindIMGroupId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bindIMGroupId:">&ndash;&nbsp;bindIMGroupId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>绑定IM群组ID
+某些场景，业务需要单独使用IM群组，可以从房间外部绑定群组ID到房间中，IM群组由业务侧自行管理（比如创建群组，退出群组等）。如果用户希望IM群组在直播房间结束时即销毁，则不需要使用此接口</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)bindIMGroupId:(NSString *)<em>groupId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupId</code></th>
+						<td><p>IM群组ID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>0 表示绑定成功</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>绑定IM群组ID
+某些场景，业务需要单独使用IM群组，可以从房间外部绑定群组ID到房间中，IM群组由业务侧自行管理（比如创建群组，退出群组等）。如果用户希望IM群组在直播房间结束时即销毁，则不需要使用此接口</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendC2CMessage:message:succ:failed:" title="sendC2CMessage:message:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendC2CMessage:message:succ:failed:">&ndash;&nbsp;sendC2CMessage:message:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送C2C消息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendC2CMessage:(NSString *)<em>dstUser</em> message:(TIMMessage *)<em>message</em> succ:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dstUser</code></th>
+						<td><p>接收方ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>IM消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>发送成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>发送失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送C2C消息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendOnlineC2CMessage:message:succ:failed:" title="sendOnlineC2CMessage:message:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendOnlineC2CMessage:message:succ:failed:">&ndash;&nbsp;sendOnlineC2CMessage:message:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送在线C2C消息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendOnlineC2CMessage:(NSString *)<em>dstUser</em> message:(TIMMessage *)<em>message</em> succ:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dstUser</code></th>
+						<td><p>接收方ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>IM消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>发送成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>发送失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送在线C2C消息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendGroupMessage:succ:failed:" title="sendGroupMessage:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendGroupMessage:succ:failed:">&ndash;&nbsp;sendGroupMessage:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送Group消息
+此处发送group，仅限于在当前直播间中发送group消息,或者绑定过IM群组id</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendGroupMessage:(TIMMessage *)<em>message</em> succ:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>IM消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>发送成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>发送失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送Group消息
+此处发送group，仅限于在当前直播间中发送group消息,或者绑定过IM群组id</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendOnlineGroupMessage:succ:failed:" title="sendOnlineGroupMessage:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendOnlineGroupMessage:succ:failed:">&ndash;&nbsp;sendOnlineGroupMessage:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送Group消息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendOnlineGroupMessage:(TIMMessage *)<em>message</em> succ:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>IM消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>发送成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>发送失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送Group消息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startPushStream:succ:failed:" title="startPushStream:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startPushStream:succ:failed:">&ndash;&nbsp;startPushStream:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>开始推流</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startPushStream:(ILivePushOption *)<em>option</em> succ:(TCIBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>option</code></th>
+						<td><p>推流配置选项</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>推流成功回调(返回 AVStreamerResp 对象)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>推流失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>开始推流</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopPushStreams:succ:failed:" title="stopPushStreams:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopPushStreams:succ:failed:">&ndash;&nbsp;stopPushStreams:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>停止推流</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopPushStreams:(NSArray *)<em>channelIds</em> succ:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>channelIds</code></th>
+						<td><p>要停止推流的频道ID数组</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>停止推流成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>停止推流失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>停止推流</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startRecordVideo:succ:failed:" title="startRecordVideo:succ:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startRecordVideo:succ:failed:">&ndash;&nbsp;startRecordVideo:succ:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>开始录制</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startRecordVideo:(ILiveRecordOption *)<em>option</em> succ:(TCIVoidBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>option</code></th>
+						<td><p>录制配置选项</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>录制成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>录制失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>开始录制</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopRecordVideo:failed:" title="stopRecordVideo:failed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopRecordVideo:failed:">&ndash;&nbsp;stopRecordVideo:failed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>停止录制</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopRecordVideo:(TCIBlock)<em>succ</em> failed:(TCIErrorBlock)<em>fail</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>succ</code></th>
+						<td><p>停止录制成功回调，返回录制视频文件的ID数组(NSString类型)，业务侧开起自动录制时，将返回nil，用户可直接到后台查询。fileID主要目的在于兼容旧版本。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fail</code></th>
+						<td><p>停止录制失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>停止录制</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getFrameDispatcher" title="getFrameDispatcher"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFrameDispatcher">&ndash;&nbsp;getFrameDispatcher</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>视频帧分发器</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (ILiveFrameDispatcher *)getFrameDispatcher</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>视频帧分发器</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ILiveRoomManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 tencent.com. All rights reserved. Updated: 2017-09-13</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -16,4 +16,9 @@
 
 @property WKWebViewJavascriptBridge* bridge;
 
+@property (nonatomic, strong) NSString *urlStr;
+
+- (void)loadUrl:(NSString *)urlStr;
+
+
 @end

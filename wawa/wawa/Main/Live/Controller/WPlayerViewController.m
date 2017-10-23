@@ -7,11 +7,9 @@
 //
 
 #import "WPlayerViewController.h"
-#import <TXLiteAVSDK_Smart/TXLivePlayer.h>
 
-@interface WPlayerViewController ()
+@interface WPlayerViewController ()<TXLivePlayListener>
 
-@property (nonatomic, strong) TXLivePlayer *txLivePlayer;
 
 @end
 
@@ -19,16 +17,48 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     _txLivePlayer = [[TXLivePlayer alloc] init];
     [_txLivePlayer setupVideoWidget:[UIScreen mainScreen].bounds containView:self.view insertIndex:0];
     
+    [_txLivePlayer setRenderRotation:HOME_ORIENTATION_RIGHT];
+    
     NSString* rtmpUrl = @"rtmp://10799.liveplay.myqcloud.com/live/10799_784387bddc";
+    
     //开启硬件加速
     _txLivePlayer.enableHWAcceleration = YES;
     
+    TXLivePlayConfig*  _config = [[TXLivePlayConfig alloc] init];
+    _config.bAutoAdjustCacheTime   = YES;
+    _config.minAutoAdjustCacheTime = 1;
+    _config.maxAutoAdjustCacheTime = 1;
+    
+    [_txLivePlayer setConfig:_config];
+    
+    _txLivePlayer.delegate = self;
+    
     [_txLivePlayer startPlay:rtmpUrl type:PLAY_TYPE_LIVE_RTMP];
 
+}
+
+
+-(void) onPlayEvent:(int)EvtID withParam:(NSDictionary*)param {
+    
+    
+//    NSLog(@"onPlayEvent == %@",param);
+}
+
+
+-(void) onNetStatus:(NSDictionary*) param {
+    
+//    NSLog(@"onNetStatus == %@",param);
+}
+
+- (void)dealloc {
+    
+    [_txLivePlayer stopPlay];
+    [_txLivePlayer setDelegate:nil];
+    _txLivePlayer = nil;
 }
 
 - (void)didReceiveMemoryWarning {

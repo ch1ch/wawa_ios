@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ILiveGenerateSig.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ILiveGenerateSig</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ILiveFunc.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveGenerateSig/generateSig:</TokenIdentifier>
+			<Abstract type="html">生成未经URL编码的签名串</Abstract>
+			<DeclaredIn>ILiveFunc.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)generateSig:(NSDictionary *)param</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>param</Name>
+					<Abstract type="html">接口特有参数,key为参数名，value为参数值</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">未经编码的签名串</Abstract></ReturnValue>
+			<Anchor>//api/name/generateSig:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveGenerateSig/generateURLSig:</TokenIdentifier>
+			<Abstract type="html">生成URL编码的签名串</Abstract>
+			<DeclaredIn>ILiveFunc.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)generateURLSig:(NSDictionary *)param</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>param</Name>
+					<Abstract type="html">接口特有参数，key为参数名，value为参数值</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">URL编码的签名串</Abstract></ReturnValue>
+			<Anchor>//api/name/generateURLSig:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

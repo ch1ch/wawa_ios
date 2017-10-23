@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ILiveQualityData.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ILiveQualityData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/setStartTime:</TokenIdentifier>
+			<Abstract type="html">统计开始时间</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger startTime</Declaration>
+			
+			
+			<Anchor>//api/name/startTime</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/startTime</TokenIdentifier>
+			<Abstract type="html">统计开始时间</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger startTime</Declaration>
+			
+			
+			<Anchor>//api/name/startTime</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveQualityData/startTime</TokenIdentifier>
+			<Abstract type="html">统计开始时间</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger startTime</Declaration>
+			
+			
+			<Anchor>//api/name/startTime</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/setEndTime:</TokenIdentifier>
+			<Abstract type="html">统计结束时间</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger endTime</Declaration>
+			
+			
+			<Anchor>//api/name/endTime</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/endTime</TokenIdentifier>
+			<Abstract type="html">统计结束时间</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger endTime</Declaration>
+			
+			
+			<Anchor>//api/name/endTime</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveQualityData/endTime</TokenIdentifier>
+			<Abstract type="html">统计结束时间</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger endTime</Declaration>
+			
+			
+			<Anchor>//api/name/endTime</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/setSendLossRate:</TokenIdentifier>
+			<Abstract type="html">发包丢包率，以百分比乘以100作为返回值。（如：丢包率为23.66%，sendLossRate=2366）</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger sendLossRate</Declaration>
+			
+			
+			<Anchor>//api/name/sendLossRate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/sendLossRate</TokenIdentifier>
+			<Abstract type="html">发包丢包率，以百分比乘以100作为返回值。（如：丢包率为23.66%，sendLossRate=2366）</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger sendLossRate</Declaration>
+			
+			
+			<Anchor>//api/name/sendLossRate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveQualityData/sendLossRate</TokenIdentifier>
+			<Abstract type="html">发包丢包率，以百分比乘以100作为返回值。（如：丢包率为23.66%，sendLossRate=2366）</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger sendLossRate</Declaration>
+			
+			
+			<Anchor>//api/name/sendLossRate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/setRecvLossRate:</TokenIdentifier>
+			<Abstract type="html">收包丢包率，以百分比乘以100作为返回值。（如：丢包率为23.66%，recvLossRate=2366)</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger recvLossRate</Declaration>
+			
+			
+			<Anchor>//api/name/recvLossRate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/recvLossRate</TokenIdentifier>
+			<Abstract type="html">收包丢包率，以百分比乘以100作为返回值。（如：丢包率为23.66%，recvLossRate=2366)</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger recvLossRate</Declaration>
+			
+			
+			<Anchor>//api/name/recvLossRate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveQualityData/recvLossRate</TokenIdentifier>
+			<Abstract type="html">收包丢包率，以百分比乘以100作为返回值。（如：丢包率为23.66%，recvLossRate=2366)</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger recvLossRate</Declaration>
+			
+			
+			<Anchor>//api/name/recvLossRate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/setAppCPURate:</TokenIdentifier>
+			<Abstract type="html">app占用CPU，以百分比乘以100作为返回值。（如：cpu占用率为7.66%，appCPURate=766)</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger appCPURate</Declaration>
+			
+			
+			<Anchor>//api/name/appCPURate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/appCPURate</TokenIdentifier>
+			<Abstract type="html">app占用CPU，以百分比乘以100作为返回值。（如：cpu占用率为7.66%，appCPURate=766)</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger appCPURate</Declaration>
+			
+			
+			<Anchor>//api/name/appCPURate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveQualityData/appCPURate</TokenIdentifier>
+			<Abstract type="html">app占用CPU，以百分比乘以100作为返回值。（如：cpu占用率为7.66%，appCPURate=766)</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger appCPURate</Declaration>
+			
+			
+			<Anchor>//api/name/appCPURate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/setSysCPURate:</TokenIdentifier>
+			<Abstract type="html">系统占用CPU，以百分比乘以100作为返回值。（如：cpu占用率为7.66%，appCPURate=766)</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger sysCPURate</Declaration>
+			
+			
+			<Anchor>//api/name/sysCPURate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/sysCPURate</TokenIdentifier>
+			<Abstract type="html">系统占用CPU，以百分比乘以100作为返回值。（如：cpu占用率为7.66%，appCPURate=766)</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger sysCPURate</Declaration>
+			
+			
+			<Anchor>//api/name/sysCPURate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveQualityData/sysCPURate</TokenIdentifier>
+			<Abstract type="html">系统占用CPU，以百分比乘以100作为返回值。（如：cpu占用率为7.66%，appCPURate=766)</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger sysCPURate</Declaration>
+			
+			
+			<Anchor>//api/name/sysCPURate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/setInteractiveSceneFPS:</TokenIdentifier>
+			<Abstract type="html">互动直播场景下，画面帧率，以百分比乘以10作为返回值。（如帧率为 15.4fps，interactiveSceneFPS = 154）</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger interactiveSceneFPS</Declaration>
+			
+			
+			<Anchor>//api/name/interactiveSceneFPS</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/interactiveSceneFPS</TokenIdentifier>
+			<Abstract type="html">互动直播场景下，画面帧率，以百分比乘以10作为返回值。（如帧率为 15.4fps，interactiveSceneFPS = 154）</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger interactiveSceneFPS</Declaration>
+			
+			
+			<Anchor>//api/name/interactiveSceneFPS</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveQualityData/interactiveSceneFPS</TokenIdentifier>
+			<Abstract type="html">互动直播场景下，画面帧率，以百分比乘以10作为返回值。（如帧率为 15.4fps，interactiveSceneFPS = 154）</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger interactiveSceneFPS</Declaration>
+			
+			
+			<Anchor>//api/name/interactiveSceneFPS</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/setSendRate:</TokenIdentifier>
+			<Abstract type="html">发送速率 单位: kbps</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger sendRate</Declaration>
+			
+			
+			<Anchor>//api/name/sendRate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/sendRate</TokenIdentifier>
+			<Abstract type="html">发送速率 单位: kbps</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger sendRate</Declaration>
+			
+			
+			<Anchor>//api/name/sendRate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveQualityData/sendRate</TokenIdentifier>
+			<Abstract type="html">发送速率 单位: kbps</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger sendRate</Declaration>
+			
+			
+			<Anchor>//api/name/sendRate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/setRecvRate:</TokenIdentifier>
+			<Abstract type="html">接收速率 单位: kbps</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger recvRate</Declaration>
+			
+			
+			<Anchor>//api/name/recvRate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveQualityData/recvRate</TokenIdentifier>
+			<Abstract type="html">接收速率 单位: kbps</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger recvRate</Declaration>
+			
+			
+			<Anchor>//api/name/recvRate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveQualityData/recvRate</TokenIdentifier>
+			<Abstract type="html">接收速率 单位: kbps</Abstract>
+			<DeclaredIn>ILiveQualityData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger recvRate</Declaration>
+			
+			
+			<Anchor>//api/name/recvRate</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

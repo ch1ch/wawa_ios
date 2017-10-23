@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WAccountLoginViewController">
+            <connections>
+                <outlet property="accountTextField" destination="PCW-Xg-WmF" id="NeD-BQ-Oag"/>
+                <outlet property="loginButton" destination="f7g-Vd-4sp" id="PTo-JU-uFI"/>
+                <outlet property="passwordTextField" destination="45q-5T-gHX" id="IRD-we-tPJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBg" translatesAutoresizingMaskIntoConstraints="NO" id="ew7-kj-8uL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accountLoginBg" translatesAutoresizingMaskIntoConstraints="NO" id="iO8-jY-1SV">
+                    <rect key="frame" x="27.5" y="367" width="320" height="190"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="190" id="btP-Qn-SIZ"/>
+                        <constraint firstAttribute="width" constant="320" id="ozt-wL-jYU"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45q-5T-gHX">
+                    <rect key="frame" x="158" y="475" width="127" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PCW-Xg-WmF">
+                    <rect key="frame" x="158" y="429" width="127" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7g-Vd-4sp">
+                    <rect key="frame" x="87.5" y="528" width="200" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="TaP-7M-jyB"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="loginBtn"/>
+                    <connections>
+                        <action selector="loginButtonEvent:" destination="-1" eventType="touchUpInside" id="nk7-Y2-EPQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f7g-Vd-4sp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3ZG-k5-cz7"/>
+                <constraint firstItem="ew7-kj-8uL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4xi-CC-qeF"/>
+                <constraint firstAttribute="trailing" secondItem="ew7-kj-8uL" secondAttribute="trailing" id="Oim-Lj-Z5b"/>
+                <constraint firstItem="ew7-kj-8uL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OmA-Sm-KMX"/>
+                <constraint firstAttribute="bottom" secondItem="iO8-jY-1SV" secondAttribute="bottom" constant="110" id="P1K-6P-Jm3"/>
+                <constraint firstItem="iO8-jY-1SV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gb9-Vd-423"/>
+                <constraint firstAttribute="bottom" secondItem="ew7-kj-8uL" secondAttribute="bottom" id="rvk-oT-tjp"/>
+                <constraint firstAttribute="bottom" secondItem="f7g-Vd-4sp" secondAttribute="bottom" constant="99" id="sXn-um-XAD"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="74.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="accountLoginBg" width="502" height="250"/>
+        <image name="loginBg" width="540" height="960"/>
+        <image name="loginBtn" width="211" height="40"/>
+    </resources>
+</document>

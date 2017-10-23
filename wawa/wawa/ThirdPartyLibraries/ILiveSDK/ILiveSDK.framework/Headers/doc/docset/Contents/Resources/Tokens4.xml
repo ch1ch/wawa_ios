@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ILiveLoginManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ILiveLoginManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ILiveLoginManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ILiveLoginManager/getInstance</TokenIdentifier>
+			<Abstract type="html">获取ILiveSDK单例</Abstract>
+			<DeclaredIn>ILiveLoginManager.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)getInstance</Declaration>
+			
+			<ReturnValue><Abstract type="html">ILiveSDK单例</Abstract></ReturnValue>
+			<Anchor>//api/name/getInstance</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveLoginManager/iLiveLogin:sig:succ:failed:</TokenIdentifier>
+			<Abstract type="html">独立模式登录(独立模式下直接使用该接口，托管模式需先用tlsLogin登录)</Abstract>
+			<DeclaredIn>ILiveLoginManager.h</DeclaredIn>
+			
+			<Declaration>- (void)iLiveLogin:(NSString *)uid sig:(NSString *)sig succ:(TCIVoidBlock)succ failed:(TCIErrorBlock)failed</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>uid</Name>
+					<Abstract type="html">用户id</Abstract>
+				</Parameter><Parameter>
+					<Name>sig</Name>
+					<Abstract type="html">用户签名</Abstract>
+				</Parameter><Parameter>
+					<Name>succ</Name>
+					<Abstract type="html">成功回调</Abstract>
+				</Parameter><Parameter>
+					<Name>failed</Name>
+					<Abstract type="html">失败回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/iLiveLogin:sig:succ:failed:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveLoginManager/iLiveLogout:failed:</TokenIdentifier>
+			<Abstract type="html">独立模式登出</Abstract>
+			<DeclaredIn>ILiveLoginManager.h</DeclaredIn>
+			
+			<Declaration>- (void)iLiveLogout:(TCIVoidBlock)succ failed:(TCIErrorBlock)failed</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>succ</Name>
+					<Abstract type="html">成功回调</Abstract>
+				</Parameter><Parameter>
+					<Name>failed</Name>
+					<Abstract type="html">失败回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/iLiveLogout:failed:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveLoginManager/tlsLogin:pwd:succ:failed:</TokenIdentifier>
+			<Abstract type="html">托管模式登录</Abstract>
+			<DeclaredIn>ILiveLoginManager.h</DeclaredIn>
+			
+			<Declaration>- (void)tlsLogin:(NSString *)uid pwd:(NSString *)pwd succ:(TCIVoidBlock)succ failed:(TCIErrorBlock)failed</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>uid</Name>
+					<Abstract type="html">用户id</Abstract>
+				</Parameter><Parameter>
+					<Name>pwd</Name>
+					<Abstract type="html">用户密码</Abstract>
+				</Parameter><Parameter>
+					<Name>succ</Name>
+					<Abstract type="html">成功回调</Abstract>
+				</Parameter><Parameter>
+					<Name>failed</Name>
+					<Abstract type="html">失败回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tlsLogin:pwd:succ:failed:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveLoginManager/tlsLogout:failed:</TokenIdentifier>
+			<Abstract type="html">托管模式登出</Abstract>
+			<DeclaredIn>ILiveLoginManager.h</DeclaredIn>
+			
+			<Declaration>- (void)tlsLogout:(TCIVoidBlock)succ failed:(TCIErrorBlock)failed</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>succ</Name>
+					<Abstract type="html">成功回调</Abstract>
+				</Parameter><Parameter>
+					<Name>failed</Name>
+					<Abstract type="html">失败回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tlsLogout:failed:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveLoginManager/tlsRegister:pwd:succ:failed:</TokenIdentifier>
+			<Abstract type="html">注册</Abstract>
+			<DeclaredIn>ILiveLoginManager.h</DeclaredIn>
+			
+			<Declaration>- (void)tlsRegister:(NSString *)uid pwd:(NSString *)pwd succ:(TCIVoidBlock)succ failed:(TCIErrorBlock)failed</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>uid</Name>
+					<Abstract type="html">用户id</Abstract>
+				</Parameter><Parameter>
+					<Name>pwd</Name>
+					<Abstract type="html">用户密码</Abstract>
+				</Parameter><Parameter>
+					<Name>succ</Name>
+					<Abstract type="html">成功回调</Abstract>
+				</Parameter><Parameter>
+					<Name>failed</Name>
+					<Abstract type="html">失败回调</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tlsRegister:pwd:succ:failed:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveLoginManager/getSig</TokenIdentifier>
+			<Abstract type="html">获取签名（只有登录成功后才能获取）</Abstract>
+			<DeclaredIn>ILiveLoginManager.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getSig</Declaration>
+			
+			<ReturnValue><Abstract type="html">签名</Abstract></ReturnValue>
+			<Anchor>//api/name/getSig</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveLoginManager/getLoginId</TokenIdentifier>
+			<Abstract type="html">获取登录Id（只有登录成功后才能获取）</Abstract>
+			<DeclaredIn>ILiveLoginManager.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getLoginId</Declaration>
+			
+			<ReturnValue><Abstract type="html">登录Id</Abstract></ReturnValue>
+			<Anchor>//api/name/getLoginId</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

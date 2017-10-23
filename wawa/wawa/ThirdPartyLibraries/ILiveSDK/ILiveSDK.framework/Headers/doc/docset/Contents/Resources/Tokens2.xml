@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ILiveFrameDispatcher.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ILiveFrameDispatcher</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ILiveFrameDispatcher.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveFrameDispatcher/addRenderAt:forIdentifier:srcType:</TokenIdentifier>
+			<Abstract type="html">在当前视图坐标系下的rect处添加id为identifier的渲染窗口，内部只能添加四路渲染窗口</Abstract>
+			<DeclaredIn>ILiveFrameDispatcher.h</DeclaredIn>
+			
+			<Declaration>- (ILiveRenderView *)addRenderAt:(CGRect)rect forIdentifier:(NSString *)identifier srcType:(avVideoSrcType)srcType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">在当前View坐标系下的区域</Abstract>
+				</Parameter><Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">用户id</Abstract>
+				</Parameter><Parameter>
+					<Name>srcType</Name>
+					<Abstract type="html">视频源</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ILiveRenderView 对象</Abstract></ReturnValue>
+			<Anchor>//api/name/addRenderAt:forIdentifier:srcType:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveFrameDispatcher/modifyAVRenderView:forIdentifier:srcType:</TokenIdentifier>
+			<Abstract type="html">修改渲染窗口位置</Abstract>
+			<DeclaredIn>ILiveFrameDispatcher.h</DeclaredIn>
+			
+			<Declaration>- (void)modifyAVRenderView:(CGRect)frame forIdentifier:(NSString *)identifier srcType:(avVideoSrcType)srcType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">新区域</Abstract>
+				</Parameter><Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">用户id</Abstract>
+				</Parameter><Parameter>
+					<Name>srcType</Name>
+					<Abstract type="html">视频源</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/modifyAVRenderView:forIdentifier:srcType:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveFrameDispatcher/removeRenderViewFor:srcType:</TokenIdentifier>
+			<Abstract type="html">删除对应的渲染窗口</Abstract>
+			<DeclaredIn>ILiveFrameDispatcher.h</DeclaredIn>
+			
+			<Declaration>- (ILiveRenderView *)removeRenderViewFor:(NSString *)identifier srcType:(avVideoSrcType)srcType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">用户id</Abstract>
+				</Parameter><Parameter>
+					<Name>srcType</Name>
+					<Abstract type="html">视频源</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ILiveRenderView  视频视图</Abstract></ReturnValue>
+			<Anchor>//api/name/removeRenderViewFor:srcType:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveFrameDispatcher/getRenderView:srcType:</TokenIdentifier>
+			<Abstract type="html">获取渲染窗口</Abstract>
+			<DeclaredIn>ILiveFrameDispatcher.h</DeclaredIn>
+			
+			<Declaration>- (ILiveRenderView *)getRenderView:(NSString *)identifier srcType:(avVideoSrcType)srcType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">用户id</Abstract>
+				</Parameter><Parameter>
+					<Name>srcType</Name>
+					<Abstract type="html">视频源</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ILiveRenderView 对象</Abstract></ReturnValue>
+			<Anchor>//api/name/getRenderView:srcType:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveFrameDispatcher/switchRenderViewOf:srcType:withRender:anotherSrcType:</TokenIdentifier>
+			<Abstract type="html">交换两个渲染窗口的位置</Abstract>
+			<DeclaredIn>ILiveFrameDispatcher.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)switchRenderViewOf:(NSString *)identifier srcType:(avVideoSrcType)srcType withRender:(NSString *)anotherIdentifier anotherSrcType:(avVideoSrcType)anotherSrcType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">用户1</Abstract>
+				</Parameter><Parameter>
+					<Name>srcType</Name>
+					<Abstract type="html">用户1视频源</Abstract>
+				</Parameter><Parameter>
+					<Name>anotherIdentifier</Name>
+					<Abstract type="html">用户2</Abstract>
+				</Parameter><Parameter>
+					<Name>anotherSrcType</Name>
+					<Abstract type="html">用户2视频源</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">BOOL              结果</Abstract></ReturnValue>
+			<Anchor>//api/name/switchRenderViewOf:srcType:withRender:anotherSrcType:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveFrameDispatcher/getAllRenderViews</TokenIdentifier>
+			<Abstract type="html">获取所有渲染窗口</Abstract>
+			<DeclaredIn>ILiveFrameDispatcher.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)getAllRenderViews</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSArray ILiveRenderView</Abstract></ReturnValue>
+			<Anchor>//api/name/getAllRenderViews</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveFrameDispatcher/removeAllRenderViews</TokenIdentifier>
+			<Abstract type="html">删除所有渲染视图</Abstract>
+			<DeclaredIn>ILiveFrameDispatcher.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)removeAllRenderViews</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSArray ILiveRenderView</Abstract></ReturnValue>
+			<Anchor>//api/name/removeAllRenderViews</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveFrameDispatcher/dispatchVideoFrame:</TokenIdentifier>
+			<Abstract type="html">分发视频帧</Abstract>
+			<DeclaredIn>ILiveFrameDispatcher.h</DeclaredIn>
+			
+			<Declaration>- (void)dispatchVideoFrame:(QAVVideoFrame *)frame</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">视频帧</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/dispatchVideoFrame:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveFrameDispatcher/getVideoFrameFromSampleBuffer:</TokenIdentifier>
+			<Abstract type="html">将kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange(NV12)格式的视频转为QAVVideoFrame</Abstract>
+			<DeclaredIn>ILiveFrameDispatcher.h</DeclaredIn>
+			
+			<Declaration>- (QAVVideoFrame *)getVideoFrameFromSampleBuffer:(CMSampleBufferRef)sampleBuffer</Declaration>
+			
+			<ReturnValue><Abstract type="html">QAVVideoFrame</Abstract></ReturnValue>
+			<Anchor>//api/name/getVideoFrameFromSampleBuffer:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveFrameDispatcher/startDisplay</TokenIdentifier>
+			<Abstract type="html">开始渲染</Abstract>
+			<DeclaredIn>ILiveFrameDispatcher.h</DeclaredIn>
+			
+			<Declaration>- (void)startDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/startDisplay</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveFrameDispatcher/stopDisplay</TokenIdentifier>
+			<Abstract type="html">停止渲染</Abstract>
+			<DeclaredIn>ILiveFrameDispatcher.h</DeclaredIn>
+			
+			<Declaration>- (void)stopDisplay</Declaration>
+			
+			
+			<Anchor>//api/name/stopDisplay</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveFrameDispatcher/isStartRender</TokenIdentifier>
+			<Abstract type="html">是否开始渲染</Abstract>
+			<DeclaredIn>ILiveFrameDispatcher.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isStartRender</Declaration>
+			
+			<ReturnValue><Abstract type="html">BOOL  是否开始渲染</Abstract></ReturnValue>
+			<Anchor>//api/name/isStartRender</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

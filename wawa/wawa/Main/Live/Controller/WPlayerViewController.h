@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <TXLiteAVSDK_Smart/TXLivePlayer.h>
 
 @interface WPlayerViewController : UIViewController
+
+@property (nonatomic, strong) TXLivePlayer *txLivePlayer;
 
 @end

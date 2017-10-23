@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ILivePushOption.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ILivePushOption</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILivePushOption/setChannelInfo:</TokenIdentifier>
+			<Abstract type="html">旁路直播频道信息</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) ILiveChannelInfo *channelInfo</Declaration>
+			
+			
+			<Anchor>//api/name/channelInfo</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILivePushOption/channelInfo</TokenIdentifier>
+			<Abstract type="html">旁路直播频道信息</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) ILiveChannelInfo *channelInfo</Declaration>
+			
+			
+			<Anchor>//api/name/channelInfo</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILivePushOption/channelInfo</TokenIdentifier>
+			<Abstract type="html">旁路直播频道信息</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) ILiveChannelInfo *channelInfo</Declaration>
+			
+			
+			<Anchor>//api/name/channelInfo</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILivePushOption/setIsAudioPush:</TokenIdentifier>
+			<Abstract type="html">是否纯音频推流，YES：纯音频推流，NO：音视频推流 默认NO</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isAudioPush</Declaration>
+			
+			
+			<Anchor>//api/name/isAudioPush</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILivePushOption/isAudioPush</TokenIdentifier>
+			<Abstract type="html">是否纯音频推流，YES：纯音频推流，NO：音视频推流 默认NO</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isAudioPush</Declaration>
+			
+			
+			<Anchor>//api/name/isAudioPush</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILivePushOption/isAudioPush</TokenIdentifier>
+			<Abstract type="html">是否纯音频推流，YES：纯音频推流，NO：音视频推流 默认NO</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isAudioPush</Declaration>
+			
+			
+			<Anchor>//api/name/isAudioPush</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILivePushOption/setEncodeType:</TokenIdentifier>
+			<Abstract type="html">编码格式</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ILiveEncodeType encodeType</Declaration>
+			
+			
+			<Anchor>//api/name/encodeType</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILivePushOption/encodeType</TokenIdentifier>
+			<Abstract type="html">编码格式</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ILiveEncodeType encodeType</Declaration>
+			
+			
+			<Anchor>//api/name/encodeType</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILivePushOption/encodeType</TokenIdentifier>
+			<Abstract type="html">编码格式</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ILiveEncodeType encodeType</Declaration>
+			
+			
+			<Anchor>//api/name/encodeType</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILivePushOption/setRecrodFileType:</TokenIdentifier>
+			<Abstract type="html">录制文件类型（ILiveRECORDFILETYPENONE则不开启录制）</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ILiveRecordFileType recrodFileType</Declaration>
+			
+			
+			<Anchor>//api/name/recrodFileType</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILivePushOption/recrodFileType</TokenIdentifier>
+			<Abstract type="html">录制文件类型（ILiveRECORDFILETYPENONE则不开启录制）</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ILiveRecordFileType recrodFileType</Declaration>
+			
+			
+			<Anchor>//api/name/recrodFileType</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILivePushOption/recrodFileType</TokenIdentifier>
+			<Abstract type="html">录制文件类型（ILiveRECORDFILETYPENONE则不开启录制）</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ILiveRecordFileType recrodFileType</Declaration>
+			
+			
+			<Anchor>//api/name/recrodFileType</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

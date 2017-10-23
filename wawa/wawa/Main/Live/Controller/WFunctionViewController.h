@@ -20,4 +20,6 @@
 
 @property (nonatomic, weak) id <LiveFunctionDelegate> delegate;
 
+- (void)start;
+
 @end

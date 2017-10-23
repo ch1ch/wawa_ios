@@ -7,8 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
+#import "WXLoginmanager.h"
 #import "WMainViewController.h"
+#import "WNaviLoginViewController.h"
+#import "WilddogVideoManager.h"
 
 @interface AppDelegate ()
 
@@ -25,14 +27,32 @@
     
     [self.window makeKeyAndVisible];
     
-    WMainViewController *mainViewController = [[WMainViewController alloc]init];
+//    WMainViewController *mainViewController = [[WMainViewController alloc]init];
+//
+//    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:mainViewController];
     
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:mainViewController];
+
+    WNaviLoginViewController *loginViewController = [[WNaviLoginViewController alloc]init];
+    
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:loginViewController];
     
     self.window.rootViewController = nav;
     
+    [WXApi registerApp:@"wx6a80112f66ba9cd9"];
+    
+    [WilddogVideoManager shareManager];
+    
     return YES;
 }
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return  [[WXLoginmanager shareManager] handleOpenURL:url];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [[WXLoginmanager shareManager] handleOpenURL:url];
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

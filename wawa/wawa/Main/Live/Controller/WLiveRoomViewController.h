@@ -10,4 +10,6 @@
 
 @interface WLiveRoomViewController : UIViewController
 
+@property (nonatomic, strong) NSDictionary *roomDic;
+
 @end

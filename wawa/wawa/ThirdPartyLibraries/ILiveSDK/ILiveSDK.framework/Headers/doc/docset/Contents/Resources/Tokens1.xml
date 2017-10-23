@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ILiveChannelInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ILiveChannelInfo</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveChannelInfo/setChannelName:</TokenIdentifier>
+			<Abstract type="html">(必选)直播频道的名称</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *channelName</Declaration>
+			
+			
+			<Anchor>//api/name/channelName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveChannelInfo/channelName</TokenIdentifier>
+			<Abstract type="html">(必选)直播频道的名称</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *channelName</Declaration>
+			
+			
+			<Anchor>//api/name/channelName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveChannelInfo/channelName</TokenIdentifier>
+			<Abstract type="html">(必选)直播频道的名称</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *channelName</Declaration>
+			
+			
+			<Anchor>//api/name/channelName</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveChannelInfo/setChannelDesc:</TokenIdentifier>
+			<Abstract type="html">(可选)直播频道的描述</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *channelDesc</Declaration>
+			
+			
+			<Anchor>//api/name/channelDesc</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveChannelInfo/channelDesc</TokenIdentifier>
+			<Abstract type="html">(可选)直播频道的描述</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *channelDesc</Declaration>
+			
+			
+			<Anchor>//api/name/channelDesc</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveChannelInfo/channelDesc</TokenIdentifier>
+			<Abstract type="html">(可选)直播频道的描述</Abstract>
+			<DeclaredIn>ILivePushOption.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *channelDesc</Declaration>
+			
+			
+			<Anchor>//api/name/channelDesc</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

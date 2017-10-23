@@ -14,13 +14,27 @@
 
 #if INTER_TEST
 
-#define APP_HOST @"123"
+#define WEB_HOST @"http://wawa.legendream.cn"
+
+#define APP_HOST @"http://47.94.236.45:9000"
+
+#define BASE_HOST  @"http://fjchao.in.3322.org:42404"
 
 #else
 
-#define APP_HOST @"456"
+#define APP_HOST @"http://wawa.legendream.cn/#/"
+
+#define APP_HOST @"http://wawa.legendream.cn/#/"
 
 #endif
+
+
+//野狗p2p视频 appid
+#define VideoAppid @"wd0062598867lwtpxz"
+#define SyncAppid  @"wd2620361786fgzrcs"
+
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 //屏幕尺寸
 #define SCREEN_WIDTH  [[UIScreen mainScreen] bounds].size.width

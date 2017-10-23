@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ILiveRenderView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ILiveRenderView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveRenderView/setIdentifier:</TokenIdentifier>
+			<Abstract type="html">渲染视频的identifier</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveRenderView/identifier</TokenIdentifier>
+			<Abstract type="html">渲染视频的identifier</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveRenderView/identifier</TokenIdentifier>
+			<Abstract type="html">渲染视频的identifier</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveRenderView/setSrcType:</TokenIdentifier>
+			<Abstract type="html">渲染视频源类型</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) avVideoSrcType srcType</Declaration>
+			
+			
+			<Anchor>//api/name/srcType</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveRenderView/srcType</TokenIdentifier>
+			<Abstract type="html">渲染视频源类型</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) avVideoSrcType srcType</Declaration>
+			
+			
+			<Anchor>//api/name/srcType</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveRenderView/srcType</TokenIdentifier>
+			<Abstract type="html">渲染视频源类型</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) avVideoSrcType srcType</Declaration>
+			
+			
+			<Anchor>//api/name/srcType</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveRenderView/setAutoRotate:</TokenIdentifier>
+			<Abstract type="html">是否开启自动旋转模式（默认YES）</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL autoRotate</Declaration>
+			
+			
+			<Anchor>//api/name/autoRotate</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveRenderView/autoRotate</TokenIdentifier>
+			<Abstract type="html">是否开启自动旋转模式（默认YES）</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL autoRotate</Declaration>
+			
+			
+			<Anchor>//api/name/autoRotate</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveRenderView/autoRotate</TokenIdentifier>
+			<Abstract type="html">是否开启自动旋转模式（默认YES）</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL autoRotate</Declaration>
+			
+			
+			<Anchor>//api/name/autoRotate</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveRenderView/setRotateAngle:</TokenIdentifier>
+			<Abstract type="html">旋转角度（手动旋转模式有效：autoRotate=NO）</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ILiveRotation rotateAngle</Declaration>
+			
+			
+			<Anchor>//api/name/rotateAngle</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveRenderView/rotateAngle</TokenIdentifier>
+			<Abstract type="html">旋转角度（手动旋转模式有效：autoRotate=NO）</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ILiveRotation rotateAngle</Declaration>
+			
+			
+			<Anchor>//api/name/rotateAngle</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveRenderView/rotateAngle</TokenIdentifier>
+			<Abstract type="html">旋转角度（手动旋转模式有效：autoRotate=NO）</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ILiveRotation rotateAngle</Declaration>
+			
+			
+			<Anchor>//api/name/rotateAngle</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveRenderView/setIsRotate:</TokenIdentifier>
+			<Abstract type="html">画面角度始终旋转至和屏幕角度一致（默认：YES）（自动旋转模式有效：autoRotate=YES）</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isRotate</Declaration>
+			
+			
+			<Anchor>//api/name/isRotate</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveRenderView/isRotate</TokenIdentifier>
+			<Abstract type="html">画面角度始终旋转至和屏幕角度一致（默认：YES）（自动旋转模式有效：autoRotate=YES）</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isRotate</Declaration>
+			
+			
+			<Anchor>//api/name/isRotate</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveRenderView/isRotate</TokenIdentifier>
+			<Abstract type="html">画面角度始终旋转至和屏幕角度一致（默认：YES）（自动旋转模式有效：autoRotate=YES）</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isRotate</Declaration>
+			
+			
+			<Anchor>//api/name/isRotate</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveRenderView/setIsMirror:</TokenIdentifier>
+			<Abstract type="html">是否镜像（主播前置镜像，后置非镜像，此参数设置无效）</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isMirror</Declaration>
+			
+			
+			<Anchor>//api/name/isMirror</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveRenderView/isMirror</TokenIdentifier>
+			<Abstract type="html">是否镜像（主播前置镜像，后置非镜像，此参数设置无效）</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isMirror</Declaration>
+			
+			
+			<Anchor>//api/name/isMirror</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveRenderView/isMirror</TokenIdentifier>
+			<Abstract type="html">是否镜像（主播前置镜像，后置非镜像，此参数设置无效）</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isMirror</Declaration>
+			
+			
+			<Anchor>//api/name/isMirror</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveRenderView/setSameDirectionRenderMode:</TokenIdentifier>
+			<Abstract type="html">角度一致填充模式（默认：ILIVERENDERMODE_SCALEASPECTFILL）
+(帧画面和View都是横屏或者都是竖屏)</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ILiveRenderMode sameDirectionRenderMode</Declaration>
+			
+			
+			<Anchor>//api/name/sameDirectionRenderMode</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveRenderView/sameDirectionRenderMode</TokenIdentifier>
+			<Abstract type="html">角度一致填充模式（默认：ILIVERENDERMODE_SCALEASPECTFILL）
+(帧画面和View都是横屏或者都是竖屏)</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ILiveRenderMode sameDirectionRenderMode</Declaration>
+			
+			
+			<Anchor>//api/name/sameDirectionRenderMode</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveRenderView/sameDirectionRenderMode</TokenIdentifier>
+			<Abstract type="html">角度一致填充模式（默认：ILIVERENDERMODE_SCALEASPECTFILL）
+(帧画面和View都是横屏或者都是竖屏)</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ILiveRenderMode sameDirectionRenderMode</Declaration>
+			
+			
+			<Anchor>//api/name/sameDirectionRenderMode</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveRenderView/setDiffDirectionRenderMode:</TokenIdentifier>
+			<Abstract type="html">角度不一致填充模式（默认：ILIVERENDERMODE_SCALEASPECTFIT）</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ILiveRenderMode diffDirectionRenderMode</Declaration>
+			
+			
+			<Anchor>//api/name/diffDirectionRenderMode</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ILiveRenderView/diffDirectionRenderMode</TokenIdentifier>
+			<Abstract type="html">角度不一致填充模式（默认：ILIVERENDERMODE_SCALEASPECTFIT）</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ILiveRenderMode diffDirectionRenderMode</Declaration>
+			
+			
+			<Anchor>//api/name/diffDirectionRenderMode</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ILiveRenderView/diffDirectionRenderMode</TokenIdentifier>
+			<Abstract type="html">角度不一致填充模式（默认：ILIVERENDERMODE_SCALEASPECTFIT）</Abstract>
+			<DeclaredIn>ILiveRenderView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ILiveRenderMode diffDirectionRenderMode</Declaration>
+			
+			
+			<Anchor>//api/name/diffDirectionRenderMode</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
