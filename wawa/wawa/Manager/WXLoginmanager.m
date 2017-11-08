@@ -7,7 +7,7 @@
 //
 
 #import "WXLoginmanager.h"
-
+#import "WXPayMaster.h"
 
 @implementation WXLoginmanager
 
@@ -50,7 +50,24 @@
 }
 
 - (void)onResp:(BaseResp *)resp {
-    
+    if([resp isKindOfClass:[PayResp class]]){
+        //支付返回结果，实际支付结果需要去微信服务器端查询
+        switch (resp.errCode) {
+            case WXSuccess:;
+                NSLog(@"支付成功－PaySuccess，retcode = %d", resp.errCode);
+                break;
+                
+            default:
+                NSLog(@"错误，retcode = %d, retstr = %@", resp.errCode,resp.errStr);
+                break;
+        }
+        WXPayMaster *payMaster = [WXPayMaster sharedInstance];
+        if(payMaster.payBlock){
+            payMaster.payBlock(resp.errCode, resp.errStr);
+        }
+        return;
+    }
+
     SendAuthResp *authResp = (SendAuthResp *)resp;
     NSString *code = authResp.code;
     _callBlock(code);

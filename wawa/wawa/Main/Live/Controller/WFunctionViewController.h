@@ -8,11 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+
+typedef enum : NSUInteger {
+    ViewStyleNone,
+    ViewStyleA,
+    ViewStyleB
+} ViewStyle;
+
 @protocol LiveFunctionDelegate <NSObject>
 
 - (void)leaveLiveRoom;
 
 - (void)startGame;
+
+- (void)changeView:(ViewStyle)style;
+
+- (void)recharge;
 
 @end
 

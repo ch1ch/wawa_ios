@@ -9,6 +9,12 @@
 #import "WilddogVideoManager.h"
 
 
+@interface WilddogVideoManager ()
+@property (strong, nonatomic) UIActivityIndicatorView *activityView;
+@property (weak, nonatomic) UIView *superView;
+@end
+
+
 @implementation WilddogVideoManager
 
 + (instancetype)shareManager {
@@ -79,16 +85,33 @@
 - (WDGVideoView *)remoteVideoView {
     
     if (!_remoteVideoView) {
-        
-        _remoteVideoView = [[WDGVideoView alloc]initWithFrame:CGRectMake(100, 0, 100, 100)];
+        _remoteVideoView = [[WDGVideoView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT -130)];
+        [_remoteVideoView setBackgroundColor:[UIColor whiteColor]];
     }
     
     return _remoteVideoView;
 }
+- (UIActivityIndicatorView *)activityView {
+    if(!_activityView){
+        _activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        [_activityView setCenter:self.remoteVideoView.center];
+    }
+    return _activityView;
+}
+#pragma mark - 显示looading
+- (void)showActivity {
+    [self.superView addSubview:self.activityView];
+    [self.activityView startAnimating];
+}
+- (void)hideActivity {
+    [self.activityView stopAnimating];
+    [self.activityView removeFromSuperview];
+}
 
 #pragma mark - 添加视频视图
 - (void)showVideoViewInView:(UIView *)view {
-    [view addSubview:self.localVideoView];
+    self.superView = view;
+//    [view addSubview:self.localVideoView];
     [view addSubview:self.remoteVideoView];
 }
 
@@ -101,9 +124,9 @@
     // 设置视频流以等比缩放并填充的方式。
     [self setVideoViewDisplayMode];
     
-    // 创建本地流并预览
-    [self createLocalStream];
-    [self previewLocalStream];
+//    // 创建本地流并预览
+//    [self createLocalStream];
+//    [self previewLocalStream];
 
 }
 
@@ -116,12 +139,20 @@
 }
 
 #pragma mark - 通话
-- (void)call {
-    
-    self.videoConversation = [self.wilddogVideoClient callWithUid:@"3da45bd1e0fd09a90783c5fa4496" localStream:self.localStream data:@"附加信息：你好"];
+- (void)call:(NSString *)uid {
+    [self stopVideo];
+    self.videoConversation = [self.wilddogVideoClient callWithUid:uid localStream:self.localStream data:@"附加信息：你好"];
     self.videoConversation.delegate = self;
     self.videoConversation.statsDelegate = self;
+    [self showActivity];
 }
+
+//- (void)call {
+//    self.videoConversation = [self.wilddogVideoClient callWithUid:@"3da45bd1e0fd09a90783c5fa4496" localStream:self.localStream data:@"附加信息：你好"];
+//    self.videoConversation.delegate = self;
+//    self.videoConversation.statsDelegate = self;
+//}
+
 
 - (void)setVideoViewDisplayMode {
     self.localVideoView.mirror = NO;
@@ -142,11 +173,15 @@
     }
 }
 
+- (void)showToast:(NSString *)message {
+    [[UIApplication sharedApplication].keyWindow.rootViewController.view makeToast:message duration:1 position:CSToastPositionCenter];
+}
 
 #pragma mark - WDGVideoDelegate
 
 - (void)wilddogVideo:(WDGVideo *)video didReceiveCallWithConversation:(WDGConversation *)conversation data:(NSString *)data {
-    
+    [self.videoConversation acceptWithLocalStream:self.localStream];
+    self.videoConversation.delegate = self;
     NSLog(@"当前用户收到新的视频通话邀请");
 }
 
@@ -162,19 +197,24 @@
     switch (callStatus) {
         case WDGCallStatusAccepted:
             NSLog(@"Call Accepted!");
-            
+            [self hideActivity];
             break;
         case WDGCallStatusRejected:
             NSLog(@"Call Rejected!");
             self.videoConversation = nil;
-      
+            [self.videoConversation close];
             break;
         case WDGCallStatusBusy:
             NSLog(@"Call Busy!");
+            [self hideActivity];
+            [self showToast:@"Call Busy!"];
+            [self.videoConversation close];
             self.videoConversation = nil;
             break;
         case WDGCallStatusTimeout:
             NSLog(@"Call Timeout!");
+            [self hideActivity];
+            [self showToast:@"Call Timeout!"];
             [self.videoConversation close];
             self.videoConversation = nil;
             break;
@@ -200,7 +240,7 @@
 
 - (void)conversation:(WDGConversation *)conversation didFailedWithError:(NSError *)error {
     NSLog(@"通话错误");
-    
+    [[UIApplication sharedApplication].keyWindow.rootViewController.view makeToast:error.localizedDescription duration:1 position:CSToastPositionCenter];
 }
 
 

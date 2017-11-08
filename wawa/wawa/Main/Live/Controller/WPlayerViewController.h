@@ -12,5 +12,6 @@
 @interface WPlayerViewController : UIViewController
 
 @property (nonatomic, strong) TXLivePlayer *txLivePlayer;
+@property (nonatomic, copy) NSString *defUrl;
 
 @end

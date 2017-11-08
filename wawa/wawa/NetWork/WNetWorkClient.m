@@ -124,4 +124,32 @@
     
 }
 
+#pragma mark - 获取充值金额列表
++ (void)getRechargePackageWithResultBlock:(ResultBack)resultBlcok {
+    NSString *url = [NSString stringWithFormat:@"%@/order/getRechargePackage",APP_HOST];
+    
+    [[HLNetWorkingClient shareManager] GET:url parameters:nil resultBlock:^(HLResponseModel *model) {
+        
+        resultBlcok(model);
+        
+    }];
+}
+#pragma mark - 充值
++ (void)rechargeWithToken:(NSString *)token
+                packageId:(NSString *)packageId
+                  payType:(NSString *)payType
+              outPayOrder:(NSString *)outPayOrder
+                  resultBlock:(ResultBack)resultBlcok {
+    NSString *url = [NSString stringWithFormat:@"%@/order/recharge",APP_HOST];
+    NSMutableDictionary *parama = [NSMutableDictionary dictionary];
+    parama[@"token"] = token;
+    parama[@"packageId"] = packageId;
+    parama[@"payType"] = payType;
+    parama[@"outPayOrder"] = outPayOrder;
+    [[HLNetWorkingClient shareManager] GET:url parameters:parama resultBlock:^(HLResponseModel *model) {
+        
+        resultBlcok(model);
+        
+    }];
+}
 @end

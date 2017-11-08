@@ -1,6 +1,6 @@
 CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR/Toast
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/Toast" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/Reachability" "${PODS_ROOT}/Headers/Public/Toast" "${PODS_ROOT}/Headers/Public/WebViewJavascriptBridge" "${PODS_ROOT}/Headers/Public/WilddogAuth" "${PODS_ROOT}/Headers/Public/WilddogCore" "${PODS_ROOT}/Headers/Public/WilddogVideo" "${PODS_ROOT}/Headers/Public/WilddogVideoBase" "${PODS_ROOT}/Headers/Public/WilddogWebRTC"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/Toast" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/Reachability" "${PODS_ROOT}/Headers/Public/Toast" "${PODS_ROOT}/Headers/Public/WebViewJavascriptBridge" "${PODS_ROOT}/Headers/Public/Wilddog" "${PODS_ROOT}/Headers/Public/WilddogAuth" "${PODS_ROOT}/Headers/Public/WilddogCore" "${PODS_ROOT}/Headers/Public/WilddogSync" "${PODS_ROOT}/Headers/Public/WilddogVideo" "${PODS_ROOT}/Headers/Public/WilddogVideoBase" "${PODS_ROOT}/Headers/Public/WilddogWebRTC"
 OTHER_LDFLAGS = -framework "QuartzCore"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

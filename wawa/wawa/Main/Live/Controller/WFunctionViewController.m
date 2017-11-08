@@ -20,17 +20,24 @@
 @property (nonatomic, strong) NSTimer *timer;
 
 @property (nonatomic, assign) NSInteger timeLength;
+///视角类型
+@property (nonatomic, assign) ViewStyle viewStyle;
 
 @end
 
 @implementation WFunctionViewController
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [_timer invalidate];
+    _timer = nil;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     //背景图
     UIImageView *bgImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT * 2)];
-    bgImageView.userInteractionEnabled = YES;
+    [bgImageView setUserInteractionEnabled:YES];
     bgImageView.image = [UIImage imageNamed:@"bg"];
     bgImageView.contentMode = UIViewContentModeScaleAspectFill;
     [self.view addSubview:bgImageView];
@@ -58,16 +65,25 @@
     _startBtn = startBtn;
     
     //充值按钮
-//    UIButton *rechargeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    rechargeBtn.frame = CGRectMake((SCREEN_WIDTH - 180)/2, SCREEN_HEIGHT - 43 -90, 180, 43);
-//    [rechargeBtn setImage:[UIImage imageNamed:@"rechargeBg"] forState:UIControlStateNormal];
-//    [rechargeBtn addTarget:self action:@selector(rechargeBtnEvent:) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:rechargeBtn];
-//
-//    UIImageView *addImageView = [[UIImageView alloc]initWithFrame:CGRectMake(180 - 25 - 11, 6, 20, 20)];
-//    addImageView.image = [UIImage imageNamed:@"recharge"];
-//    [rechargeBtn addSubview:addImageView];
+    UIButton *rechargeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    rechargeBtn.frame = CGRectMake(SCREEN_WIDTH - 180-10, SCREEN_HEIGHT - 43 -90, 180, 43);
+    [rechargeBtn setImage:[UIImage imageNamed:@"rechargeBg"] forState:UIControlStateNormal];
+    [rechargeBtn addTarget:self action:@selector(rechargeBtnEvent:) forControlEvents:UIControlEventTouchUpInside];
+    [rechargeBtn setBackgroundColor:[UIColor yellowColor]];
+    [self.view addSubview:rechargeBtn];
+
+    UIImageView *addImageView = [[UIImageView alloc]initWithFrame:CGRectMake(180 - 25 - 11, 6, 20, 20)];
+    [addImageView setUserInteractionEnabled:YES];
+    addImageView.image = [UIImage imageNamed:@"recharge"];
+    [rechargeBtn addSubview:addImageView];
     
+    _viewStyle = ViewStyleNone;
+    //切换视角
+    UIButton *cutViewBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    cutViewBtn.frame = CGRectMake(SCREEN_WIDTH - 50, (SCREEN_HEIGHT -130)/2-26, 50, 52);
+    [cutViewBtn setImage:[UIImage imageNamed:@"change"] forState:UIControlStateNormal];
+    [cutViewBtn addTarget:self action:@selector(cutViewBtnEvent:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:cutViewBtn];
 }
 
 - (UIView *)playView {
@@ -120,9 +136,25 @@
 - (void)rechargeBtnEvent:(UIButton *)button {
     
     NSLog(@"Chongzhi");
-    
+    if ([_delegate respondsToSelector:@selector(recharge)]) {
+        [_delegate recharge];
+    }
 }
 
+- (void)cutViewBtnEvent:(UIButton *)button {
+    NSLog(@"change");
+    if(_viewStyle == ViewStyleNone){
+        return;
+    }
+    if(_viewStyle == ViewStyleA){
+        _viewStyle = ViewStyleB;
+    }else if (_viewStyle == ViewStyleB){
+        _viewStyle = ViewStyleA;
+    }
+    if ([_delegate respondsToSelector:@selector(changeView:)]) {
+        [_delegate changeView:_viewStyle];
+    }
+}
 
 #pragma mark - start 开始游戏 
 - (void)start {
@@ -134,6 +166,7 @@
     self.startBtn.hidden = YES;
     
     [self startTimer];
+    _viewStyle = ViewStyleA;
 }
 
 - (void)stop {
@@ -198,8 +231,6 @@
         
     }];
 }
-
-
 #pragma mark - Timer 
 - (void)startTimer {
     

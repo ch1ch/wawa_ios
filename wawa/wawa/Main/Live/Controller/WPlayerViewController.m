@@ -17,14 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     _txLivePlayer = [[TXLivePlayer alloc] init];
-    [_txLivePlayer setupVideoWidget:[UIScreen mainScreen].bounds containView:self.view insertIndex:0];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-130)];
+    [self.view addSubview:view];
+    [_txLivePlayer setupVideoWidget:[UIScreen mainScreen].bounds containView:view insertIndex:0];
     
     [_txLivePlayer setRenderRotation:HOME_ORIENTATION_RIGHT];
     
-    NSString* rtmpUrl = @"rtmp://10799.liveplay.myqcloud.com/live/10799_784387bddc";
-    
+//    NSString* rtmpUrl = @"rtmp://10799.liveplay.myqcloud.com/live/10799_784387bddc";
+    NSString* rtmpUrl = [NSString stringWithFormat:@"rtmp://%@", self.defUrl];
     //开启硬件加速
     _txLivePlayer.enableHWAcceleration = YES;
     
@@ -40,7 +41,6 @@
     [_txLivePlayer startPlay:rtmpUrl type:PLAY_TYPE_LIVE_RTMP];
 
 }
-
 
 -(void) onPlayEvent:(int)EvtID withParam:(NSDictionary*)param {
     

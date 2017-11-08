@@ -37,4 +37,12 @@ typedef void(^ResultBack)(HLResponseModel *model);
 //  移动娃娃机钩子抓取
 + (void)moveWawaCrawlWithResultBlock:(ResultBack)resultBlcok;
 
+//获取充值金额列表
++ (void)getRechargePackageWithResultBlock:(ResultBack)resultBlcok;
+//充值
++ (void)rechargeWithToken:(NSString *)token
+                packageId:(NSString *)packageId
+                  payType:(NSString *)payType
+              outPayOrder:(NSString *)outPayOrder
+              resultBlock:(ResultBack)resultBlcok;
 @end

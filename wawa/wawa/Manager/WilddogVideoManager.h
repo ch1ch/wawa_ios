@@ -40,6 +40,6 @@
 
 - (void)stopVideo;
 
-- (void)call;
+- (void)call:(NSString *)uid;
 
 @end
