@@ -10,6 +10,21 @@
 
 @implementation WPlayerManager
 
++ (instancetype)shareManager {
+    
+    static dispatch_once_t onceToken;
+    static WPlayerManager *manager;
+    dispatch_once(&onceToken, ^{
+        
+        manager = [[WPlayerManager alloc]init];
+        
+    });
+    
+    return manager;
+    
+}
 
-
+- (NSString *)ipAddress {
+    return self.roomDic[@"ipAddress"];
+}
 @end

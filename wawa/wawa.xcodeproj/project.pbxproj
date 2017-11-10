@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		154703AC742799E1286E9978 /* libPods-wawa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F5B37EAF63675639584096 /* libPods-wawa.a */; };
+		3B480BE41FB5542D001EA2B8 /* WCountDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B480BE31FB5542D001EA2B8 /* WCountDownView.m */; };
 		3B55216F1FB1AB6000508C58 /* WRechargeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B55216E1FB1AB6000508C58 /* WRechargeView.m */; };
 		3B5521731FB1B66400508C58 /* WPackageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5521711FB1B66400508C58 /* WPackageTableViewCell.m */; };
 		3B5521741FB1B66400508C58 /* WPackageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5521721FB1B66400508C58 /* WPackageTableViewCell.xib */; };
@@ -108,6 +109,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B480BE21FB5542D001EA2B8 /* WCountDownView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCountDownView.h; sourceTree = "<group>"; };
+		3B480BE31FB5542D001EA2B8 /* WCountDownView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCountDownView.m; sourceTree = "<group>"; };
 		3B55216D1FB1AB6000508C58 /* WRechargeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WRechargeView.h; sourceTree = "<group>"; };
 		3B55216E1FB1AB6000508C58 /* WRechargeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WRechargeView.m; sourceTree = "<group>"; };
 		3B5521701FB1B66400508C58 /* WPackageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPackageTableViewCell.h; sourceTree = "<group>"; };
@@ -720,6 +723,8 @@
 				6FF582AF1F700D4E00A68B6A /* WplayVIew.xib */,
 				3B55216D1FB1AB6000508C58 /* WRechargeView.h */,
 				3B55216E1FB1AB6000508C58 /* WRechargeView.m */,
+				3B480BE21FB5542D001EA2B8 /* WCountDownView.h */,
+				3B480BE31FB5542D001EA2B8 /* WCountDownView.m */,
 				3B5521701FB1B66400508C58 /* WPackageTableViewCell.h */,
 				3B5521711FB1B66400508C58 /* WPackageTableViewCell.m */,
 				3B5521721FB1B66400508C58 /* WPackageTableViewCell.xib */,
@@ -1069,6 +1074,7 @@
 				6F3A6F9C1F62F64500A805FB /* WLiveRoomViewController.m in Sources */,
 				3BC3ACA61FB1EAC900CF5368 /* WXPayMaster.m in Sources */,
 				6F58F7E41F795A440008347F /* WUser.m in Sources */,
+				3B480BE41FB5542D001EA2B8 /* WCountDownView.m in Sources */,
 				6F236C4B1F793D2000652CD6 /* WLoginViewController.m in Sources */,
 				6FF582961F6E132900A68B6A /* HLColorSet.m in Sources */,
 				6F85D70D1F8255FD00A11DC2 /* WAccountLoginViewController.m in Sources */,

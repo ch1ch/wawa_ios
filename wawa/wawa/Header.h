@@ -18,7 +18,7 @@
 
 #define APP_HOST @"http://47.94.236.45:9000"
 
-#define BASE_HOST  @"http://fjchao.in.3322.org:42404"
+#define BASE_HOST  [NSString stringWithFormat:@"http://%@", [[WPlayerManager shareManager] ipAddress]]
 
 #else
 

@@ -7,6 +7,7 @@
 //
 
 #import "WNetWorkClient.h"
+#import "WPlayerManager.h"
 
 @implementation WNetWorkClient
 
@@ -113,7 +114,6 @@
 
 #pragma mark - 移动娃娃机钩子抓取
 + (void)moveWawaCrawlWithResultBlock:(ResultBack)resultBlcok {
-    
     NSString *url = [NSString stringWithFormat:@"%@/action?action=6&time=100",BASE_HOST];
     
     [[HLNetWorkingClient shareManager] GET:url parameters:nil resultBlock:^(HLResponseModel *model) {
@@ -149,7 +149,17 @@
     [[HLNetWorkingClient shareManager] GET:url parameters:parama resultBlock:^(HLResponseModel *model) {
         
         resultBlcok(model);
-        
     }];
+}
+//获取用户信息
++ (void)getUserInfo:(NSString *)token
+        resultBlock:(ResultBack)resultBlcok {
+    NSString *url = [NSString stringWithFormat:@"%@/user/getUserInfo",APP_HOST];
+    NSMutableDictionary *parama = [NSMutableDictionary dictionary];
+    parama[@"token"] = token;
+    [[HLNetWorkingClient shareManager] GET:url parameters:parama resultBlock:^(HLResponseModel *model) {
+        resultBlcok(model);
+    }];
+
 }
 @end

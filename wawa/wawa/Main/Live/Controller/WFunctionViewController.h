@@ -32,5 +32,5 @@ typedef enum : NSUInteger {
 @property (nonatomic, weak) id <LiveFunctionDelegate> delegate;
 
 - (void)start;
-
+- (void)reloadGameMoney;
 @end

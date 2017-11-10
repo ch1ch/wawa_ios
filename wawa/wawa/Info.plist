@@ -37,7 +37,7 @@
 			<string>alipay</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>legendream.wawa</string>
+				<string>legendreamwawa</string>
 			</array>
 		</dict>
 	</array>

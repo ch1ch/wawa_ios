@@ -45,4 +45,9 @@ typedef void(^ResultBack)(HLResponseModel *model);
                   payType:(NSString *)payType
               outPayOrder:(NSString *)outPayOrder
               resultBlock:(ResultBack)resultBlcok;
+
+//获取用户信息
++ (void)getUserInfo:(NSString *)token
+        resultBlock:(ResultBack)resultBlcok;
+
 @end

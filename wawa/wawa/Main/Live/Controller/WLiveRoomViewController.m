@@ -13,6 +13,8 @@
 #import "WilddoglistenerManager.h"
 #import "WRechargeView.h"
 #import <AlipaySDK/AlipaySDK.h>
+#import "AppDelegate.h"
+#import "WPlayerManager.h"
 
 @interface WLiveRoomViewController ()<UIScrollViewDelegate,LiveFunctionDelegate>
 
@@ -76,6 +78,7 @@
     if (dic) {
         _token = dic[@"token"];
     }
+    [[WPlayerManager shareManager] setRoomDic:self.roomDic];
     
     [WilddoglistenerManager shareManager];
 }
@@ -104,8 +107,6 @@
     
         [ws.view hideToastActivity];
         
-        
-        
         if (model.code == 200) {
 
             [ws playGameAction];
@@ -128,7 +129,6 @@
     [_functionViewController start];
     [self showRemoView:ViewStyleA];
     [_playViewController.txLivePlayer stopPlay];
-//    [_playViewController.view removeFromSuperview];
 }
 
 - (void)recharge {
@@ -179,27 +179,38 @@
     
     [self.view makeToastActivity:CSToastPositionCenter];
 
-        [WNetWorkClient rechargeWithToken:_token packageId:package[@"id"] payType:@"1" outPayOrder:nil resultBlock:^(HLResponseModel *model) {
+    [WNetWorkClient rechargeWithToken:_token packageId:package[@"id"] payType:@"1" outPayOrder:nil resultBlock:^(HLResponseModel *model) {
+        AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        appDelegate.payViewController = ws;
+        [ws.view hideToastActivity];
+        
+        if (model.code == 200) {
+            NSLog(@"%@", model.data);
+            NSString *transString = model.data;
+//            NSString *transString = [NSString stringWithString:[model.data stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
             
-            [ws.view hideToastActivity];
+            [[AlipaySDK defaultService] payOrder:transString fromScheme:@"legendreamwawa" callback:^(NSDictionary *resultDic) {
+                if([resultDic[@"resultStatus"] integerValue] == 9000){
+                    //订单支付成功
+                    [ws.view makeToast:@"支付成功" duration:1 position:CSToastPositionCenter];
+                    [_functionViewController reloadGameMoney];
+                }else if ([resultDic[@"resultStatus"] integerValue] == 6001){
+                    //用户取消
+                }
+            }];
             
-            if (model.code == 200) {
-                NSLog(@"%@", model.data);
-                [[AlipaySDK defaultService] payOrder:model.data fromScheme:@"legendream.wawa" callback:^(NSDictionary *resultDic) {
-                    if([resultDic[@"resultStatus"] integerValue] == 9000){
-                        //订单支付成功
-                        [ws.view makeToast:@"支付成功" duration:1 position:CSToastPositionCenter];
-                    }else if ([resultDic[@"resultStatus"] integerValue] == 6001){
-                        //用户取消
-                    }
-                }];
-                
-            }else {
-                
-                [ws.view makeToast:model.message duration:1 position:CSToastPositionCenter];
-                NSLog(@"%@",model.error);
-            }
-        }];
+        }else {
+            
+            [ws.view makeToast:model.message duration:1 position:CSToastPositionCenter];
+            NSLog(@"%@",model.error);
+        }
+    }];
+}
+
+- (void)paySuccess {
+    [self.view makeToast:@"支付成功" duration:1 position:CSToastPositionCenter];
+    [_functionViewController reloadGameMoney];
+    [self.rechargeView dismiss];
 }
 - (BOOL)prefersStatusBarHidden {
     return YES;

@@ -10,4 +10,10 @@
 
 @interface WPlayerManager : NSObject
 
+@property (strong, nonatomic) NSDictionary *roomDic;
+
++ (instancetype)shareManager;
+
+- (NSString *)ipAddress;
+
 @end

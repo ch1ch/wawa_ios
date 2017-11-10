@@ -8,6 +8,8 @@
 
 #import "WFunctionViewController.h"
 #import "WPlayView.h"
+#import "UIColor+Category.h"
+#import "WCountDownView.h"
 
 @interface WFunctionViewController ()<PlayViewDelegate>
 
@@ -16,7 +18,9 @@
 @property (nonatomic, strong) UIButton *startBtn;
 
 @property (nonatomic, strong) UIButton *crawlButton;
-
+@property (nonatomic, strong) UILabel *gameMoneyLabel;
+@property (nonatomic, strong) UILabel *countDownLabel;
+@property (nonatomic, strong) UIButton *rechargeBtn;
 @property (nonatomic, strong) NSTimer *timer;
 
 @property (nonatomic, assign) NSInteger timeLength;
@@ -66,16 +70,18 @@
     
     //充值按钮
     UIButton *rechargeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    rechargeBtn.frame = CGRectMake(SCREEN_WIDTH - 180-10, SCREEN_HEIGHT - 43 -90, 180, 43);
-    [rechargeBtn setImage:[UIImage imageNamed:@"rechargeBg"] forState:UIControlStateNormal];
+    rechargeBtn.frame = CGRectMake(SCREEN_WIDTH - 105-10, SCREEN_HEIGHT - 50 -80, 105, 50);
+    [rechargeBtn setImage:[UIImage imageNamed:@"ic_recharge"] forState:UIControlStateNormal];
     [rechargeBtn addTarget:self action:@selector(rechargeBtnEvent:) forControlEvents:UIControlEventTouchUpInside];
-    [rechargeBtn setBackgroundColor:[UIColor yellowColor]];
     [self.view addSubview:rechargeBtn];
-
-    UIImageView *addImageView = [[UIImageView alloc]initWithFrame:CGRectMake(180 - 25 - 11, 6, 20, 20)];
-    [addImageView setUserInteractionEnabled:YES];
-    addImageView.image = [UIImage imageNamed:@"recharge"];
-    [rechargeBtn addSubview:addImageView];
+    self.rechargeBtn = rechargeBtn;
+    
+    UILabel *gameMoneyLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 19, 60, 25)];
+    [rechargeBtn addSubview:gameMoneyLabel];
+    [gameMoneyLabel setTextAlignment:NSTextAlignmentRight];
+    [gameMoneyLabel setFont:[UIFont systemFontOfSize:18 weight:UIFontWeightSemibold]];
+    [gameMoneyLabel setTextColor:[UIColor customColorWithString:@"#dd5767"]];
+    self.gameMoneyLabel = gameMoneyLabel;
     
     _viewStyle = ViewStyleNone;
     //切换视角
@@ -84,6 +90,13 @@
     [cutViewBtn setImage:[UIImage imageNamed:@"change"] forState:UIControlStateNormal];
     [cutViewBtn addTarget:self action:@selector(cutViewBtnEvent:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:cutViewBtn];
+    [self reloadGameMoney];
+    
+    UILabel *countDownLabel = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-60, 40, 20, 20)];
+    [countDownLabel setFont:[UIFont systemFontOfSize:10]];
+    [countDownLabel setTextColor:[UIColor customColorWithString:@"#dd5767"]];
+    [self.view addSubview:countDownLabel];
+    self.countDownLabel = countDownLabel;
 }
 
 - (UIView *)playView {
@@ -164,9 +177,12 @@
     self.playView.hidden = NO;
     self.crawlButton.hidden = NO;
     self.startBtn.hidden = YES;
-    
-    [self startTimer];
-    _viewStyle = ViewStyleA;
+    [self.rechargeBtn setHidden:YES];
+    WS(ws);
+    WCountDownView *countDownView = [[WCountDownView alloc] init];
+    [countDownView showCountDownFinished:^{
+        [ws startTimer];
+    }];
 }
 
 - (void)stop {
@@ -174,7 +190,7 @@
     self.playView.hidden = YES;
     self.crawlButton.hidden = YES;
     self.startBtn.hidden = NO;
-    
+    [self.rechargeBtn setHidden:NO];
 }
 
 
@@ -233,14 +249,14 @@
 }
 #pragma mark - Timer 
 - (void)startTimer {
-    
     if (_timer) {
         
         [self stopTimer];
     }
     
     _timeLength = 60;
-    
+    [self.countDownLabel setHidden:NO];
+    [self.countDownLabel setText:@"60"];
     WS(ws);
     
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
@@ -257,6 +273,7 @@
     
     [_timer invalidate];
     _timer = nil;
+    [self.countDownLabel setHidden:YES];
 }
 
 
@@ -265,7 +282,7 @@
     _timeLength --;
     
     NSLog(@"time == %ld",_timeLength);
-    
+    [self.countDownLabel setText:[NSString stringWithFormat:@"%li", (long)_timeLength]];
     if (_timeLength <= 0) {
         
         [self stopTimer];
@@ -278,6 +295,23 @@
     
 }
 
+- (void)reloadGameMoney {
+
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSDictionary *dic = [userDefaults valueForKey:@"userInfo"];
+    if (dic) {
+        [WNetWorkClient getUserInfo: dic[@"token"] resultBlock:^(HLResponseModel *model) {
+            if (model.code == 200) {
+                NSLog(@"%@", model.data);
+                self.gameMoneyLabel.text = [NSString stringWithFormat:@"%@", model.data[@"gameMoney"]];
+            }else {
+                [[UIApplication sharedApplication].keyWindow.rootViewController.view makeToast:model.message duration:1 position:CSToastPositionCenter];
+                NSLog(@"%@",model.error);
+            }
+            
+        }];
+    }
+}
 - (void)dealloc {
     
     [_timer invalidate];

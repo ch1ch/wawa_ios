@@ -92,9 +92,10 @@
     if ([code isEqual:[NSNull null]] || code == nil || [code isEqualToString:@""]) {
         return;
     }
-    
+    WS(ws);
+    [self.view makeToastActivity:CSToastPositionCenter];
     [WNetWorkClient wxLoginWithCode:code resultBlock:^(HLResponseModel *model) {
-        
+        [ws.view hideToastActivity];
         if (model.code == 200) {
             
             NSMutableDictionary *dic = [model.data mutableCopy];
@@ -126,7 +127,7 @@
             
         }
         else {
-            
+            [ws.view makeToast:model.message duration:1 position:CSToastPositionCenter];
             
         }
         
