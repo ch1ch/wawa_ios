@@ -525,13 +525,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		6F236C481F793CF600652CD6 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		6F3A6F2E1F5F17A000A805FB = {
 			isa = PBXGroup;
 			children = (
@@ -686,7 +679,6 @@
 		6F3A6F961F62F61700A805FB /* Live */ = {
 			isa = PBXGroup;
 			children = (
-				6F3A6F981F62F61700A805FB /* Model */,
 				6F3A6F991F62F61700A805FB /* View */,
 				6F3A6F971F62F61700A805FB /* Controller */,
 			);
@@ -704,13 +696,6 @@
 				6F3A6FB11F63D6CD00A805FB /* WFunctionViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		6F3A6F981F62F61700A805FB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		6F3A6F991F62F61700A805FB /* View */ = {
@@ -736,7 +721,6 @@
 			isa = PBXGroup;
 			children = (
 				6F236C471F793CF600652CD6 /* Model */,
-				6F236C481F793CF600652CD6 /* View */,
 				6F236C461F793CF600652CD6 /* Controller */,
 			);
 			path = Login;
@@ -782,7 +766,6 @@
 			isa = PBXGroup;
 			children = (
 				6F3A6FC81F64488A00A805FB /* Model */,
-				6F3A6FC91F64488A00A805FB /* View */,
 				6F3A6FC71F64488A00A805FB /* Controller */,
 			);
 			path = Base;
@@ -806,13 +789,6 @@
 				6F58F7E01F79583C0008347F /* BaseModel.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		6F3A6FC91F64488A00A805FB /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		6F58F82E1F7B72E80008347F /* IMSDK */ = {

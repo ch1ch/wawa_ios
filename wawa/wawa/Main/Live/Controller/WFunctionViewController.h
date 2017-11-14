@@ -10,7 +10,6 @@
 
 
 typedef enum : NSUInteger {
-    ViewStyleNone,
     ViewStyleA,
     ViewStyleB
 } ViewStyle;

@@ -40,7 +40,7 @@
     
     self.window.rootViewController = nav;
     
-    [WXApi registerApp:@"wx6a80112f66ba9cd9"];
+    [WXApi registerApp:@"wx9a7d6224ec489554"];
     
     [WilddogVideoManager shareManager];
     

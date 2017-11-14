@@ -83,7 +83,6 @@
     [gameMoneyLabel setTextColor:[UIColor customColorWithString:@"#dd5767"]];
     self.gameMoneyLabel = gameMoneyLabel;
     
-    _viewStyle = ViewStyleNone;
     //切换视角
     UIButton *cutViewBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     cutViewBtn.frame = CGRectMake(SCREEN_WIDTH - 50, (SCREEN_HEIGHT -130)/2-26, 50, 52);
@@ -93,7 +92,12 @@
     [self reloadGameMoney];
     
     UILabel *countDownLabel = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-60, 40, 20, 20)];
-    [countDownLabel setFont:[UIFont systemFontOfSize:10]];
+    [countDownLabel setFont:[UIFont systemFontOfSize:18]];
+    [countDownLabel setText:@"60"];
+    [countDownLabel setTextAlignment:NSTextAlignmentCenter];
+    [countDownLabel sizeToFit];
+    [countDownLabel setText:nil];
+    [countDownLabel setFrame:CGRectMake(SCREEN_WIDTH-20-countDownLabel.frame.size.width, 40, countDownLabel.frame.size.width, countDownLabel.frame.size.height)];
     [countDownLabel setTextColor:[UIColor customColorWithString:@"#dd5767"]];
     [self.view addSubview:countDownLabel];
     self.countDownLabel = countDownLabel;
@@ -156,9 +160,6 @@
 
 - (void)cutViewBtnEvent:(UIButton *)button {
     NSLog(@"change");
-    if(_viewStyle == ViewStyleNone){
-        return;
-    }
     if(_viewStyle == ViewStyleA){
         _viewStyle = ViewStyleB;
     }else if (_viewStyle == ViewStyleB){
@@ -173,7 +174,7 @@
 - (void)start {
     
     NSLog(@"start");
-    
+    self.viewStyle = ViewStyleA;
     self.playView.hidden = NO;
     self.crawlButton.hidden = NO;
     self.startBtn.hidden = YES;
@@ -199,7 +200,9 @@
     NSLog(@"up");
     
     [WNetWorkClient moveWawaUpWithResultBlock:^(HLResponseModel *model) {
-       
+        if (model.code != 200) {
+            NSLog(@"up error: %@", model.error.localizedDescription);
+        }
         
     }];
 }
@@ -209,8 +212,9 @@
     NSLog(@"left");
     
     [WNetWorkClient moveWawaLeftWithResultBlock:^(HLResponseModel *model) {
-        
-        
+        if (model.code != 200) {
+            NSLog(@"left error: %@", model.error.localizedDescription);
+        }
     }];
 }
 
@@ -219,8 +223,9 @@
     NSLog(@"bottom");
     
     [WNetWorkClient moveWawaDownWithResultBlock:^(HLResponseModel *model) {
-        
-        
+        if (model.code != 200) {
+            NSLog(@"bottom error: %@", model.error.localizedDescription);
+        }
     }];
 }
 
@@ -229,8 +234,9 @@
     NSLog(@"right");
     
     [WNetWorkClient moveWawaRightWithResultBlock:^(HLResponseModel *model) {
-        
-        
+        if (model.code != 200) {
+            NSLog(@"right error: %@", model.error.localizedDescription);
+        }
     }];
 }
 

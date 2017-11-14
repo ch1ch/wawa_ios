@@ -24,8 +24,8 @@
     
     [_txLivePlayer setRenderRotation:HOME_ORIENTATION_RIGHT];
     
-//    NSString* rtmpUrl = @"rtmp://10799.liveplay.myqcloud.com/live/10799_784387bddc";
-    NSString* rtmpUrl = [NSString stringWithFormat:@"rtmp://%@", self.defUrl];
+
+    NSString* rtmpUrl = self.defUrl;//[NSString stringWithFormat:@"rtmp://%@", self.defUrl];
     //开启硬件加速
     _txLivePlayer.enableHWAcceleration = YES;
     

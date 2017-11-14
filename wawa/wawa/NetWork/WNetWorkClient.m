@@ -61,7 +61,7 @@
 #pragma mark - 向前移动娃娃机钩子
 + (void)moveWawaUpWithResultBlock:(ResultBack)resultBlcok {
     
-    NSString *url = [NSString stringWithFormat:@"%@/action?action=1&time=100",BASE_HOST];
+    NSString *url = [NSString stringWithFormat:@"%@/action?action=1&time=300",BASE_HOST];
     
     [[HLNetWorkingClient shareManager] GET:url parameters:nil resultBlock:^(HLResponseModel *model) {
         
@@ -74,7 +74,7 @@
 #pragma mark - 向左移动娃娃机钩子
 + (void)moveWawaLeftWithResultBlock:(ResultBack)resultBlcok {
     
-    NSString *url = [NSString stringWithFormat:@"%@/action?action=3&time=100",BASE_HOST];
+    NSString *url = [NSString stringWithFormat:@"%@/action?action=3&time=300",BASE_HOST];
     
     [[HLNetWorkingClient shareManager] GET:url parameters:nil resultBlock:^(HLResponseModel *model) {
         
@@ -88,7 +88,7 @@
 #pragma mark - 向下移动娃娃机钩子
 + (void)moveWawaDownWithResultBlock:(ResultBack)resultBlcok {
     
-    NSString *url = [NSString stringWithFormat:@"%@/action?action=2&time=100",BASE_HOST];
+    NSString *url = [NSString stringWithFormat:@"%@/action?action=2&time=300",BASE_HOST];
     
     [[HLNetWorkingClient shareManager] GET:url parameters:nil resultBlock:^(HLResponseModel *model) {
         
@@ -101,7 +101,7 @@
 #pragma mark - 向右移动娃娃机钩子
 + (void)moveWawaRightWithResultBlock:(ResultBack)resultBlcok {
     
-    NSString *url = [NSString stringWithFormat:@"%@/action?action=4&time=100",BASE_HOST];
+    NSString *url = [NSString stringWithFormat:@"%@/action?action=4&time=300",BASE_HOST];
     
     [[HLNetWorkingClient shareManager] GET:url parameters:nil resultBlock:^(HLResponseModel *model) {
         
@@ -114,7 +114,7 @@
 
 #pragma mark - 移动娃娃机钩子抓取
 + (void)moveWawaCrawlWithResultBlock:(ResultBack)resultBlcok {
-    NSString *url = [NSString stringWithFormat:@"%@/action?action=6&time=100",BASE_HOST];
+    NSString *url = [NSString stringWithFormat:@"%@/action?action=6&time=300",BASE_HOST];
     
     [[HLNetWorkingClient shareManager] GET:url parameters:nil resultBlock:^(HLResponseModel *model) {
         

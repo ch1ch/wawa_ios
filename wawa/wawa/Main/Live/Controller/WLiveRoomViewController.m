@@ -55,7 +55,10 @@
     [manager startVideo]; //开始连接
     
     WPlayerViewController *playViewController = [[WPlayerViewController alloc]init];
-    playViewController.defUrl = [self.roomDic objectForKey:@"video3"];
+//    playViewController.defUrl = [self.roomDic objectForKey:@"video3"];
+    NSString *rtmpUrl = @"rtmp://10799.liveplay.myqcloud.com/live/10799_2bca7708d6";
+    playViewController.defUrl = rtmpUrl;
+    
     [playViewController.view setFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT * 2)];
     [self addChildViewController:playViewController];
     [self.scrollView addSubview:playViewController.view];
@@ -96,7 +99,7 @@
 - (void)startGame {
     
     [self playGameAction];
-    
+
     return;
     
     WS(ws);
@@ -124,11 +127,12 @@
 
 - (void)changeView:(ViewStyle)style {
     [self showRemoView:style];
+
 }
 - (void)playGameAction {
     [_functionViewController start];
-    [self showRemoView:ViewStyleA];
-    [_playViewController.txLivePlayer stopPlay];
+//    [self showRemoView:ViewStyleA];
+//    [_playViewController.txLivePlayer stopPlay];
 }
 
 - (void)recharge {
@@ -161,15 +165,21 @@
 
 #pragma mark - function
 - (void)showRemoView:(ViewStyle)style {
-    WilddogVideoManager *manager = [WilddogVideoManager shareManager];
-//    [manager startVideo]; //开始连接
+    [_playViewController.txLivePlayer stopPlay];
     if(style == ViewStyleA){
-        [manager call:@"1351f267f85697080c1fe9fa03eb"];
-//        [manager call:[self.roomDic objectForKey:@"video1"]];
+        NSString *rtmpUrl = @"rtmp://10799.liveplay.myqcloud.com/live/10799_2bca7708d6";
+        [_playViewController.txLivePlayer startPlay:rtmpUrl type:PLAY_TYPE_LIVE_RTMP];
     }else {
-        [manager call:@"1a98140e0bf49701755ab5aa2b20"];
-//        [manager call:[self.roomDic objectForKey:@"video2"]];
+        NSString *rtmpUrl = @"rtmp://10799.liveplay.myqcloud.com/live/10799_dcb84fc992";
+        [_playViewController.txLivePlayer startPlay:rtmpUrl type:PLAY_TYPE_LIVE_RTMP];
     }
+    
+//    WilddogVideoManager *manager = [WilddogVideoManager shareManager];
+//    if(style == ViewStyleA){
+//        [manager call:[self.roomDic objectForKey:@"video1"]];
+//    }else {
+//        [manager call:[self.roomDic objectForKey:@"video2"]];
+//    }
 }
 
 #pragma mark - 支付
